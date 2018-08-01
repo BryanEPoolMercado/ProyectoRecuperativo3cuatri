@@ -1,0 +1,592 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PROYECTOVUELO02Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Aerolinea">
+    <Key>
+      <PropertyRef Name="Id_Aerolinea" />
+    </Key>
+    <Property Name="Id_Aerolinea" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Avion" Relationship="Self.RefAerolinea61" FromRole="Aerolinea" ToRole="Avion" />
+  </EntityType>
+  <EntityType Name="Aeropuerto">
+    <Key>
+      <PropertyRef Name="Id_Aeropuerto" />
+    </Key>
+    <Property Name="Id_Aeropuerto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Id_Ciudad" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Ruta" Relationship="Self.RefAeropuerto79" FromRole="Aeropuerto" ToRole="Ruta" />
+    <NavigationProperty Name="Ruta1" Relationship="Self.RefAeropuerto80" FromRole="Aeropuerto" ToRole="Ruta" />
+  </EntityType>
+  <EntityType Name="Asiento">
+    <Key>
+      <PropertyRef Name="Id_Asiento" />
+    </Key>
+    <Property Name="Id_Asiento" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Letra" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Fila" Type="Int32" />
+    <Property Name="Id_Seccion" Type="Int32" Nullable="false" />
+    <Property Name="id_" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Boleto" Relationship="Self.RefAsiento47" FromRole="Asiento" ToRole="Boleto" />
+    <NavigationProperty Name="Clase" Relationship="Self.RefClase45" FromRole="Asiento" ToRole="Clase" />
+    <NavigationProperty Name="Ubicacion" Relationship="Self.RefUbicacion63" FromRole="Asiento" ToRole="Ubicacion" />
+  </EntityType>
+  <EntityType Name="Avion">
+    <Key>
+      <PropertyRef Name="Id_Avion" />
+    </Key>
+    <Property Name="Id_Avion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NumeroPasajeros" Type="Int32" />
+    <Property Name="Id_Aerolinea" Type="Int32" Nullable="false" />
+    <Property Name="IdModelo" Type="Int32" />
+    <NavigationProperty Name="Aerolinea" Relationship="Self.RefAerolinea61" FromRole="Avion" ToRole="Aerolinea" />
+    <NavigationProperty Name="Vuelos" Relationship="Self.RefAvion35" FromRole="Avion" ToRole="Vuelos" />
+    <NavigationProperty Name="Clase" Relationship="Self.RefAvion42" FromRole="Avion" ToRole="Clase" />
+    <NavigationProperty Name="Precio" Relationship="Self.RefAvion87" FromRole="Avion" ToRole="Precio" />
+    <NavigationProperty Name="Modelo" Relationship="Self.RefModelo90" FromRole="Avion" ToRole="Modelo" />
+  </EntityType>
+  <EntityType Name="Boleto">
+    <Key>
+      <PropertyRef Name="Id_Boleto" />
+    </Key>
+    <Property Name="Id_Boleto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Id_Vuelo" Type="Int32" Nullable="false" />
+    <Property Name="Id_Asiento" Type="Int32" Nullable="false" />
+    <Property Name="NombrePasajero" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Asiento" Relationship="Self.RefAsiento47" FromRole="Boleto" ToRole="Asiento" />
+    <NavigationProperty Name="Detalle_Compra" Relationship="Self.RefBoleto67" FromRole="Boleto" ToRole="Detalle_Compra" />
+    <NavigationProperty Name="Vuelos" Relationship="Self.RefVuelos34" FromRole="Boleto" ToRole="Vuelos" />
+  </EntityType>
+  <EntityType Name="Clase">
+    <Key>
+      <PropertyRef Name="Id_Seccion" />
+    </Key>
+    <Property Name="Id_Seccion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Id_Avion" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Asiento" Relationship="Self.RefClase45" FromRole="Clase" ToRole="Asiento" />
+    <NavigationProperty Name="Avion" Relationship="Self.RefAvion42" FromRole="Clase" ToRole="Avion" />
+    <NavigationProperty Name="Precio" Relationship="Self.RefClase89" FromRole="Clase" ToRole="Precio" />
+  </EntityType>
+  <EntityType Name="Detalle_Compra">
+    <Key>
+      <PropertyRef Name="IdDetalleCompra" />
+    </Key>
+    <Property Name="IdDetalleCompra" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Id_Boleto" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Boleto" Relationship="Self.RefBoleto67" FromRole="Detalle_Compra" ToRole="Boleto" />
+  </EntityType>
+  <EntityType Name="Estatus">
+    <Key>
+      <PropertyRef Name="Id_pago" />
+    </Key>
+    <Property Name="Id_pago" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Id_Estatus" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="Cantidad" Type="Double" />
+    <NavigationProperty Name="Compra" Relationship="Self.RefEstatus57" FromRole="Estatus" ToRole="Compra" />
+  </EntityType>
+  <EntityType Name="Modelo">
+    <Key>
+      <PropertyRef Name="IdModelo" />
+    </Key>
+    <Property Name="IdModelo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NombreModelo" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NumeroFilas" Type="Int32" Nullable="false" />
+    <Property Name="NumeroColumnas" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Avion" Relationship="Self.RefModelo90" FromRole="Modelo" ToRole="Avion" />
+  </EntityType>
+  <EntityType Name="Pais">
+    <Key>
+      <PropertyRef Name="Id_Ciudad" />
+    </Key>
+    <Property Name="Id_Ciudad" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Ciudad" Relationship="Self.RefPais18" FromRole="Pais" ToRole="Ciudad" />
+  </EntityType>
+  <EntityType Name="Perfil">
+    <Key>
+      <PropertyRef Name="Id_Perfil" />
+    </Key>
+    <Property Name="Id_Perfil" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_perfil" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Usuario" Relationship="Self.RefPerfil23" FromRole="Perfil" ToRole="Usuario" />
+  </EntityType>
+  <EntityType Name="Precio">
+    <Key>
+      <PropertyRef Name="Id_Precio" />
+    </Key>
+    <Property Name="Id_Precio" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Precio1" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="Id_Avion" Type="Int32" Nullable="false" />
+    <Property Name="Id_Ruta" Type="Int32" Nullable="false" />
+    <Property Name="Id_Seccion" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Avion" Relationship="Self.RefAvion87" FromRole="Precio" ToRole="Avion" />
+    <NavigationProperty Name="Clase" Relationship="Self.RefClase89" FromRole="Precio" ToRole="Clase" />
+    <NavigationProperty Name="Ruta" Relationship="Self.RefRuta88" FromRole="Precio" ToRole="Ruta" />
+  </EntityType>
+  <EntityType Name="Ruta">
+    <Key>
+      <PropertyRef Name="Id_Ruta" />
+    </Key>
+    <Property Name="Id_Ruta" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Distancia" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Destino_Aeropuerto" Type="Int32" Nullable="false" />
+    <Property Name="Origen_Aeropuerto" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Aeropuerto" Relationship="Self.RefAeropuerto79" FromRole="Ruta" ToRole="Aeropuerto" />
+    <NavigationProperty Name="Aeropuerto1" Relationship="Self.RefAeropuerto80" FromRole="Ruta" ToRole="Aeropuerto" />
+    <NavigationProperty Name="Precio" Relationship="Self.RefRuta88" FromRole="Ruta" ToRole="Precio" />
+    <NavigationProperty Name="Vuelos" Relationship="Self.RefRuta86" FromRole="Ruta" ToRole="Vuelos" />
+  </EntityType>
+  <EntityType Name="Tarjeta">
+    <Key>
+      <PropertyRef Name="Id_Tarjeta" />
+    </Key>
+    <Property Name="Id_Tarjeta" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Num_Cuenta" Type="Int32" />
+    <Property Name="Tipo_Tarjeta" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha_Venc" Type="DateTime" Precision="3" />
+    <Property Name="CVC" Type="Int32" />
+    <Property Name="Apellido_Pat" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Apellido_Mat" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Tipo_de_Pago" Relationship="Self.RefTarjeta64" FromRole="Tarjeta" ToRole="Tipo_de_Pago" />
+  </EntityType>
+  <EntityType Name="Tipo_de_Moneda">
+    <Key>
+      <PropertyRef Name="Id_Moneda" />
+    </Key>
+    <Property Name="Id_Moneda" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Moneda" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Compra" Relationship="Self.RefTipo_de_Moneda58" FromRole="Tipo_de_Moneda" ToRole="Compra" />
+  </EntityType>
+  <EntityType Name="Tipo_de_Pago">
+    <Key>
+      <PropertyRef Name="Id_TipoPago" />
+    </Key>
+    <Property Name="Id_TipoPago" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_TipoPago" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="Id_Tarjeta" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Tarjeta" Relationship="Self.RefTarjeta64" FromRole="Tipo_de_Pago" ToRole="Tarjeta" />
+  </EntityType>
+  <EntityType Name="Ubicacion">
+    <Key>
+      <PropertyRef Name="id_" />
+    </Key>
+    <Property Name="id_" Type="Int32" Nullable="false" />
+    <Property Name="nombre_ubicacion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="id_asiento" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Asiento" Relationship="Self.RefUbicacion63" FromRole="Ubicacion" ToRole="Asiento" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="Id_Usuario" />
+    </Key>
+    <Property Name="Id_Usuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Fecha" Type="DateTime" Precision="0" />
+    <Property Name="Direccion" Type="String" MaxLength="35" FixedLength="false" Unicode="false" />
+    <Property Name="Codigo_p" Type="Int32" />
+    <Property Name="Telefono_us" Type="Int32" />
+    <Property Name="Apellido_mat" Type="String" MaxLength="35" FixedLength="false" Unicode="false" />
+    <Property Name="Apellido_pat" Type="String" MaxLength="35" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Id_Perfil" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Perfil" Relationship="Self.RefPerfil23" FromRole="Usuario" ToRole="Perfil" />
+    <NavigationProperty Name="Compra" Relationship="Self.RefUsuario30" FromRole="Usuario" ToRole="Compra" />
+  </EntityType>
+  <EntityType Name="Vuelos">
+    <Key>
+      <PropertyRef Name="Id_Vuelo" />
+    </Key>
+    <Property Name="Id_Vuelo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Hora_Inicio" Type="Time" Precision="7" />
+    <Property Name="Hora_Fin" Type="Time" Precision="7" />
+    <Property Name="Id_Avion" Type="Int32" Nullable="false" />
+    <Property Name="Id_Ruta" Type="Int32" />
+    <Property Name="Fecha" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="Avion" Relationship="Self.RefAvion35" FromRole="Vuelos" ToRole="Avion" />
+    <NavigationProperty Name="Boleto" Relationship="Self.RefVuelos34" FromRole="Vuelos" ToRole="Boleto" />
+    <NavigationProperty Name="Ruta" Relationship="Self.RefRuta86" FromRole="Vuelos" ToRole="Ruta" />
+  </EntityType>
+  <EntityType Name="Ciudad">
+    <Key>
+      <PropertyRef Name="Id_Ciudad" />
+    </Key>
+    <Property Name="Id_Ciudad" Type="Int32" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Pais" Relationship="Self.RefPais18" FromRole="Ciudad" ToRole="Pais" />
+  </EntityType>
+  <EntityType Name="Compra">
+    <Key>
+      <PropertyRef Name="Fecha_compra" />
+      <PropertyRef Name="Id_Usuario" />
+      <PropertyRef Name="Id_pago" />
+      <PropertyRef Name="Id_Moneda" />
+    </Key>
+    <Property Name="Fecha_compra" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Id_Usuario" Type="Int32" Nullable="false" />
+    <Property Name="Id_pago" Type="Int32" Nullable="false" />
+    <Property Name="Id_Moneda" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Estatus" Relationship="Self.RefEstatus57" FromRole="Compra" ToRole="Estatus" />
+    <NavigationProperty Name="Tipo_de_Moneda" Relationship="Self.RefTipo_de_Moneda58" FromRole="Compra" ToRole="Tipo_de_Moneda" />
+    <NavigationProperty Name="Usuario" Relationship="Self.RefUsuario30" FromRole="Compra" ToRole="Usuario" />
+  </EntityType>
+  <Association Name="RefAerolinea61">
+    <End Role="Aerolinea" Type="Self.Aerolinea" Multiplicity="1" />
+    <End Role="Avion" Type="Self.Avion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Aerolinea">
+        <PropertyRef Name="Id_Aerolinea" />
+      </Principal>
+      <Dependent Role="Avion">
+        <PropertyRef Name="Id_Aerolinea" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RefAeropuerto79">
+    <End Role="Aeropuerto" Type="Self.Aeropuerto" Multiplicity="1" />
+    <End Role="Ruta" Type="Self.Ruta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Aeropuerto">
+        <PropertyRef Name="Id_Aeropuerto" />
+      </Principal>
+      <Dependent Role="Ruta">
+        <PropertyRef Name="Origen_Aeropuerto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RefAeropuerto80">
+    <End Role="Aeropuerto" Type="Self.Aeropuerto" Multiplicity="1" />
+    <End Role="Ruta" Type="Self.Ruta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Aeropuerto">
+        <PropertyRef Name="Id_Aeropuerto" />
+      </Principal>
+      <Dependent Role="Ruta">
+        <PropertyRef Name="Destino_Aeropuerto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RefAsiento47">
+    <End Role="Asiento" Type="Self.Asiento" Multiplicity="1" />
+    <End Role="Boleto" Type="Self.Boleto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Asiento">
+        <PropertyRef Name="Id_Asiento" />
+      </Principal>
+      <Dependent Role="Boleto">
+        <PropertyRef Name="Id_Asiento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RefClase45">
+    <End Role="Clase" Type="Self.Clase" Multiplicity="1" />
+    <End Role="Asiento" Type="Self.Asiento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clase">
+        <PropertyRef Name="Id_Seccion" />
+      </Principal>
+      <Dependent Role="Asiento">
+        <PropertyRef Name="Id_Seccion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RefUbicacion63">
+    <End Role="Ubicacion" Type="Self.Ubicacion" Multiplicity="1" />
+    <End Role="Asiento" Type="Self.Asiento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ubicacion">
+        <PropertyRef Name="id_" />
+      </Principal>
+      <Dependent Role="Asiento">
+        <PropertyRef Name="id_" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RefAvion35">
+    <End Role="Avion" Type="Self.Avion" Multiplicity="1" />
+    <End Role="Vuelos" Type="Self.Vuelos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Avion">
+        <PropertyRef Name="Id_Avion" />
+      </Principal>
+      <Dependent Role="Vuelos">
+        <PropertyRef Name="Id_Avion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RefAvion42">
+    <End Role="Avion" Type="Self.Avion" Multiplicity="1" />
+    <End Role="Clase" Type="Self.Clase" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Avion">
+        <PropertyRef Name="Id_Avion" />
+      </Principal>
+      <Dependent Role="Clase">
+        <PropertyRef Name="Id_Avion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RefAvion87">
+    <End Role="Avion" Type="Self.Avion" Multiplicity="1" />
+    <End Role="Precio" Type="Self.Precio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Avion">
+        <PropertyRef Name="Id_Avion" />
+      </Principal>
+      <Dependent Role="Precio">
+        <PropertyRef Name="Id_Avion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RefModelo90">
+    <End Role="Modelo" Type="Self.Modelo" Multiplicity="0..1" />
+    <End Role="Avion" Type="Self.Avion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Modelo">
+        <PropertyRef Name="IdModelo" />
+      </Principal>
+      <Dependent Role="Avion">
+        <PropertyRef Name="IdModelo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RefBoleto67">
+    <End Role="Boleto" Type="Self.Boleto" Multiplicity="1" />
+    <End Role="Detalle_Compra" Type="Self.Detalle_Compra" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Boleto">
+        <PropertyRef Name="Id_Boleto" />
+      </Principal>
+      <Dependent Role="Detalle_Compra">
+        <PropertyRef Name="Id_Boleto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RefVuelos34">
+    <End Role="Vuelos" Type="Self.Vuelos" Multiplicity="1" />
+    <End Role="Boleto" Type="Self.Boleto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vuelos">
+        <PropertyRef Name="Id_Vuelo" />
+      </Principal>
+      <Dependent Role="Boleto">
+        <PropertyRef Name="Id_Vuelo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RefClase89">
+    <End Role="Clase" Type="Self.Clase" Multiplicity="1" />
+    <End Role="Precio" Type="Self.Precio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clase">
+        <PropertyRef Name="Id_Seccion" />
+      </Principal>
+      <Dependent Role="Precio">
+        <PropertyRef Name="Id_Seccion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RefEstatus57">
+    <End Role="Estatus" Type="Self.Estatus" Multiplicity="1" />
+    <End Role="Compra" Type="Self.Compra" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Estatus">
+        <PropertyRef Name="Id_pago" />
+      </Principal>
+      <Dependent Role="Compra">
+        <PropertyRef Name="Id_pago" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RefPais18">
+    <End Role="Pais" Type="Self.Pais" Multiplicity="1" />
+    <End Role="Ciudad" Type="Self.Ciudad" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Pais">
+        <PropertyRef Name="Id_Ciudad" />
+      </Principal>
+      <Dependent Role="Ciudad">
+        <PropertyRef Name="Id_Ciudad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RefPerfil23">
+    <End Role="Perfil" Type="Self.Perfil" Multiplicity="1" />
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Perfil">
+        <PropertyRef Name="Id_Perfil" />
+      </Principal>
+      <Dependent Role="Usuario">
+        <PropertyRef Name="Id_Perfil" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RefRuta88">
+    <End Role="Ruta" Type="Self.Ruta" Multiplicity="1" />
+    <End Role="Precio" Type="Self.Precio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ruta">
+        <PropertyRef Name="Id_Ruta" />
+      </Principal>
+      <Dependent Role="Precio">
+        <PropertyRef Name="Id_Ruta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RefRuta86">
+    <End Role="Ruta" Type="Self.Ruta" Multiplicity="0..1" />
+    <End Role="Vuelos" Type="Self.Vuelos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ruta">
+        <PropertyRef Name="Id_Ruta" />
+      </Principal>
+      <Dependent Role="Vuelos">
+        <PropertyRef Name="Id_Ruta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RefTarjeta64">
+    <End Role="Tarjeta" Type="Self.Tarjeta" Multiplicity="1" />
+    <End Role="Tipo_de_Pago" Type="Self.Tipo_de_Pago" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tarjeta">
+        <PropertyRef Name="Id_Tarjeta" />
+      </Principal>
+      <Dependent Role="Tipo_de_Pago">
+        <PropertyRef Name="Id_Tarjeta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RefTipo_de_Moneda58">
+    <End Role="Tipo_de_Moneda" Type="Self.Tipo_de_Moneda" Multiplicity="1" />
+    <End Role="Compra" Type="Self.Compra" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tipo_de_Moneda">
+        <PropertyRef Name="Id_Moneda" />
+      </Principal>
+      <Dependent Role="Compra">
+        <PropertyRef Name="Id_Moneda" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RefUsuario30">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+    <End Role="Compra" Type="Self.Compra" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="Id_Usuario" />
+      </Principal>
+      <Dependent Role="Compra">
+        <PropertyRef Name="Id_Usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="PROYECTOVUELO02Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Aerolinea" EntityType="Self.Aerolinea" />
+    <EntitySet Name="Aeropuerto" EntityType="Self.Aeropuerto" />
+    <EntitySet Name="Asiento" EntityType="Self.Asiento" />
+    <EntitySet Name="Avion" EntityType="Self.Avion" />
+    <EntitySet Name="Boleto" EntityType="Self.Boleto" />
+    <EntitySet Name="Clase" EntityType="Self.Clase" />
+    <EntitySet Name="Detalle_Compra" EntityType="Self.Detalle_Compra" />
+    <EntitySet Name="Estatus" EntityType="Self.Estatus" />
+    <EntitySet Name="Modelo" EntityType="Self.Modelo" />
+    <EntitySet Name="Pais" EntityType="Self.Pais" />
+    <EntitySet Name="Perfil" EntityType="Self.Perfil" />
+    <EntitySet Name="Precio" EntityType="Self.Precio" />
+    <EntitySet Name="Ruta" EntityType="Self.Ruta" />
+    <EntitySet Name="Tarjeta" EntityType="Self.Tarjeta" />
+    <EntitySet Name="Tipo_de_Moneda" EntityType="Self.Tipo_de_Moneda" />
+    <EntitySet Name="Tipo_de_Pago" EntityType="Self.Tipo_de_Pago" />
+    <EntitySet Name="Ubicacion" EntityType="Self.Ubicacion" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" />
+    <EntitySet Name="Vuelos" EntityType="Self.Vuelos" />
+    <EntitySet Name="Ciudad" EntityType="Self.Ciudad" />
+    <EntitySet Name="Compra" EntityType="Self.Compra" />
+    <AssociationSet Name="RefAerolinea61" Association="Self.RefAerolinea61">
+      <End Role="Aerolinea" EntitySet="Aerolinea" />
+      <End Role="Avion" EntitySet="Avion" />
+    </AssociationSet>
+    <AssociationSet Name="RefAeropuerto79" Association="Self.RefAeropuerto79">
+      <End Role="Aeropuerto" EntitySet="Aeropuerto" />
+      <End Role="Ruta" EntitySet="Ruta" />
+    </AssociationSet>
+    <AssociationSet Name="RefAeropuerto80" Association="Self.RefAeropuerto80">
+      <End Role="Aeropuerto" EntitySet="Aeropuerto" />
+      <End Role="Ruta" EntitySet="Ruta" />
+    </AssociationSet>
+    <AssociationSet Name="RefAsiento47" Association="Self.RefAsiento47">
+      <End Role="Asiento" EntitySet="Asiento" />
+      <End Role="Boleto" EntitySet="Boleto" />
+    </AssociationSet>
+    <AssociationSet Name="RefClase45" Association="Self.RefClase45">
+      <End Role="Clase" EntitySet="Clase" />
+      <End Role="Asiento" EntitySet="Asiento" />
+    </AssociationSet>
+    <AssociationSet Name="RefUbicacion63" Association="Self.RefUbicacion63">
+      <End Role="Ubicacion" EntitySet="Ubicacion" />
+      <End Role="Asiento" EntitySet="Asiento" />
+    </AssociationSet>
+    <AssociationSet Name="RefAvion35" Association="Self.RefAvion35">
+      <End Role="Avion" EntitySet="Avion" />
+      <End Role="Vuelos" EntitySet="Vuelos" />
+    </AssociationSet>
+    <AssociationSet Name="RefAvion42" Association="Self.RefAvion42">
+      <End Role="Avion" EntitySet="Avion" />
+      <End Role="Clase" EntitySet="Clase" />
+    </AssociationSet>
+    <AssociationSet Name="RefAvion87" Association="Self.RefAvion87">
+      <End Role="Avion" EntitySet="Avion" />
+      <End Role="Precio" EntitySet="Precio" />
+    </AssociationSet>
+    <AssociationSet Name="RefModelo90" Association="Self.RefModelo90">
+      <End Role="Modelo" EntitySet="Modelo" />
+      <End Role="Avion" EntitySet="Avion" />
+    </AssociationSet>
+    <AssociationSet Name="RefBoleto67" Association="Self.RefBoleto67">
+      <End Role="Boleto" EntitySet="Boleto" />
+      <End Role="Detalle_Compra" EntitySet="Detalle_Compra" />
+    </AssociationSet>
+    <AssociationSet Name="RefVuelos34" Association="Self.RefVuelos34">
+      <End Role="Vuelos" EntitySet="Vuelos" />
+      <End Role="Boleto" EntitySet="Boleto" />
+    </AssociationSet>
+    <AssociationSet Name="RefClase89" Association="Self.RefClase89">
+      <End Role="Clase" EntitySet="Clase" />
+      <End Role="Precio" EntitySet="Precio" />
+    </AssociationSet>
+    <AssociationSet Name="RefEstatus57" Association="Self.RefEstatus57">
+      <End Role="Estatus" EntitySet="Estatus" />
+      <End Role="Compra" EntitySet="Compra" />
+    </AssociationSet>
+    <AssociationSet Name="RefPais18" Association="Self.RefPais18">
+      <End Role="Pais" EntitySet="Pais" />
+      <End Role="Ciudad" EntitySet="Ciudad" />
+    </AssociationSet>
+    <AssociationSet Name="RefPerfil23" Association="Self.RefPerfil23">
+      <End Role="Perfil" EntitySet="Perfil" />
+      <End Role="Usuario" EntitySet="Usuario" />
+    </AssociationSet>
+    <AssociationSet Name="RefRuta88" Association="Self.RefRuta88">
+      <End Role="Ruta" EntitySet="Ruta" />
+      <End Role="Precio" EntitySet="Precio" />
+    </AssociationSet>
+    <AssociationSet Name="RefRuta86" Association="Self.RefRuta86">
+      <End Role="Ruta" EntitySet="Ruta" />
+      <End Role="Vuelos" EntitySet="Vuelos" />
+    </AssociationSet>
+    <AssociationSet Name="RefTarjeta64" Association="Self.RefTarjeta64">
+      <End Role="Tarjeta" EntitySet="Tarjeta" />
+      <End Role="Tipo_de_Pago" EntitySet="Tipo_de_Pago" />
+    </AssociationSet>
+    <AssociationSet Name="RefTipo_de_Moneda58" Association="Self.RefTipo_de_Moneda58">
+      <End Role="Tipo_de_Moneda" EntitySet="Tipo_de_Moneda" />
+      <End Role="Compra" EntitySet="Compra" />
+    </AssociationSet>
+    <AssociationSet Name="RefUsuario30" Association="Self.RefUsuario30">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Compra" EntitySet="Compra" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

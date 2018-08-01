@@ -1,0 +1,206 @@
+c:\users\candi santiago\source\repos\ProyectoVuelo\WFProyectoVuelo\bin\Debug\WFProyectoVuelo.exe.config
+c:\users\candi santiago\source\repos\ProyectoVuelo\WFProyectoVuelo\bin\Debug\WFProyectoVuelo.exe
+c:\users\candi santiago\source\repos\ProyectoVuelo\WFProyectoVuelo\bin\Debug\WFProyectoVuelo.pdb
+c:\users\candi santiago\source\repos\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.csprojResolveAssemblyReference.cache
+c:\users\candi santiago\source\repos\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.Properties.Resources.resources
+c:\users\candi santiago\source\repos\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.csproj.GenerateResource.cache
+c:\users\candi santiago\source\repos\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.csproj.CoreCompileInputs.cache
+c:\users\candi santiago\source\repos\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.exe
+c:\users\candi santiago\source\repos\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.pdb
+F:\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\WFProyectoVuelo.exe.config
+F:\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\WFProyectoVuelo.exe
+F:\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\WFProyectoVuelo.pdb
+F:\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\Bunifu_UI_v1.5.3.dll
+F:\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\Datos.dll
+F:\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\EntityFramework.dll
+F:\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\EntityFramework.SqlServer.dll
+F:\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\Datos.pdb
+F:\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\Datos.dll.config
+F:\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.csprojAssemblyReference.cache
+F:\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.frm_Login.resources
+F:\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_AerolineaEdit.resources
+F:\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_Aerolineas.resources
+F:\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.Properties.Resources.resources
+F:\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.csproj.GenerateResource.cache
+F:\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.csproj.CoreCompileInputs.cache
+F:\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.csproj.CopyComplete
+F:\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.exe
+F:\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.pdb
+F:\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_Modelo.resources
+F:\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_ModeloEdit.resources
+C:\Users\bboyd\Desktop\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\WFProyectoVuelo.exe.config
+C:\Users\bboyd\Desktop\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\WFProyectoVuelo.exe
+C:\Users\bboyd\Desktop\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\WFProyectoVuelo.pdb
+C:\Users\bboyd\Desktop\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\bboyd\Desktop\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\Datos.dll
+C:\Users\bboyd\Desktop\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\EntityFramework.dll
+C:\Users\bboyd\Desktop\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\bboyd\Desktop\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\Datos.pdb
+C:\Users\bboyd\Desktop\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\Datos.dll.config
+C:\Users\bboyd\Desktop\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.csprojAssemblyReference.cache
+C:\Users\bboyd\Desktop\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_Modelo.resources
+C:\Users\bboyd\Desktop\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_ModeloEdit.resources
+C:\Users\bboyd\Desktop\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.frm_Login.resources
+C:\Users\bboyd\Desktop\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_AerolineaEdit.resources
+C:\Users\bboyd\Desktop\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_Aerolineas.resources
+C:\Users\bboyd\Desktop\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.Properties.Resources.resources
+C:\Users\bboyd\Desktop\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.csproj.GenerateResource.cache
+C:\Users\bboyd\Desktop\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.csproj.CoreCompileInputs.cache
+C:\Users\bboyd\Desktop\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.csproj.CopyComplete
+C:\Users\bboyd\Desktop\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.exe
+C:\Users\bboyd\Desktop\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.pdb
+C:\Users\bboyd\Desktop\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_AvionEdit.resources
+C:\Users\bboyd\Desktop\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_Aviones.resources
+C:\Users\bboyd\Desktop\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_PerfilEdit.resources
+C:\Users\bboyd\Desktop\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_Perfiles.resources
+C:\Users\bboyd\Desktop\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_Catalogos.resources
+C:\Users\bboyd\Desktop\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_MenuPrincipal.resources
+C:\Users\bboyd\Desktop\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_Tarjeta.resources
+C:\Users\bboyd\Desktop\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_TarjetaEdit.resources
+C:\Users\bboyd\Desktop\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_Moneda.resources
+C:\Users\bboyd\Desktop\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_MonedaEdit.resources
+C:\Users\bboyd\Desktop\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_Estatus.resources
+C:\Users\bboyd\Desktop\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_EstatusEdit.resources
+C:\Users\bboyd\Desktop\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_Ruta.resources
+C:\Users\bboyd\Desktop\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_RutaEdit.resources
+C:\Users\bboyd\Desktop\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_Asiento.resources
+C:\Users\bboyd\Desktop\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_AsientoEdit.resources
+C:\Users\bboyd\Desktop\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_Clase.resources
+C:\Users\bboyd\Desktop\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_ClaseEdit.resources
+C:\Users\bboyd\Desktop\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_Ubicacion.resources
+C:\Users\bboyd\Desktop\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_UbicacionEdit.resources
+C:\Users\bboyd\Desktop\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_Usuario.resources
+C:\Users\bboyd\Desktop\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_UsuarioEdit.resources
+C:\Users\luis_\Desktop\Bases de Datos Proyecto Moreno\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\WFProyectoVuelo.exe.config
+C:\Users\luis_\Desktop\Bases de Datos Proyecto Moreno\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\WFProyectoVuelo.exe
+C:\Users\luis_\Desktop\Bases de Datos Proyecto Moreno\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\WFProyectoVuelo.pdb
+C:\Users\luis_\Desktop\Bases de Datos Proyecto Moreno\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\Datos.dll
+C:\Users\luis_\Desktop\Bases de Datos Proyecto Moreno\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\EntityFramework.dll
+C:\Users\luis_\Desktop\Bases de Datos Proyecto Moreno\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\luis_\Desktop\Bases de Datos Proyecto Moreno\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\Datos.pdb
+C:\Users\luis_\Desktop\Bases de Datos Proyecto Moreno\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\Datos.dll.config
+C:\Users\luis_\Desktop\Bases de Datos Proyecto Moreno\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.csprojAssemblyReference.cache
+C:\Users\luis_\Desktop\Bases de Datos Proyecto Moreno\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_Asiento.resources
+C:\Users\luis_\Desktop\Bases de Datos Proyecto Moreno\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_AsientoEdit.resources
+C:\Users\luis_\Desktop\Bases de Datos Proyecto Moreno\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_AvionEdit.resources
+C:\Users\luis_\Desktop\Bases de Datos Proyecto Moreno\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_Aviones.resources
+C:\Users\luis_\Desktop\Bases de Datos Proyecto Moreno\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_Catalogos.resources
+C:\Users\luis_\Desktop\Bases de Datos Proyecto Moreno\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_Clase.resources
+C:\Users\luis_\Desktop\Bases de Datos Proyecto Moreno\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_ClaseEdit.resources
+C:\Users\luis_\Desktop\Bases de Datos Proyecto Moreno\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_Estatus.resources
+C:\Users\luis_\Desktop\Bases de Datos Proyecto Moreno\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_EstatusEdit.resources
+C:\Users\luis_\Desktop\Bases de Datos Proyecto Moreno\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_MenuPrincipal.resources
+C:\Users\luis_\Desktop\Bases de Datos Proyecto Moreno\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_Modelo.resources
+C:\Users\luis_\Desktop\Bases de Datos Proyecto Moreno\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_ModeloEdit.resources
+C:\Users\luis_\Desktop\Bases de Datos Proyecto Moreno\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_Moneda.resources
+C:\Users\luis_\Desktop\Bases de Datos Proyecto Moreno\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_MonedaEdit.resources
+C:\Users\luis_\Desktop\Bases de Datos Proyecto Moreno\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_PerfilEdit.resources
+C:\Users\luis_\Desktop\Bases de Datos Proyecto Moreno\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_Perfiles.resources
+C:\Users\luis_\Desktop\Bases de Datos Proyecto Moreno\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_Ruta.resources
+C:\Users\luis_\Desktop\Bases de Datos Proyecto Moreno\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_RutaEdit.resources
+C:\Users\luis_\Desktop\Bases de Datos Proyecto Moreno\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_Tarjeta.resources
+C:\Users\luis_\Desktop\Bases de Datos Proyecto Moreno\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_TarjetaEdit.resources
+C:\Users\luis_\Desktop\Bases de Datos Proyecto Moreno\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_Ubicacion.resources
+C:\Users\luis_\Desktop\Bases de Datos Proyecto Moreno\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_UbicacionEdit.resources
+C:\Users\luis_\Desktop\Bases de Datos Proyecto Moreno\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_Usuario.resources
+C:\Users\luis_\Desktop\Bases de Datos Proyecto Moreno\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_UsuarioEdit.resources
+C:\Users\luis_\Desktop\Bases de Datos Proyecto Moreno\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.frm_Login.resources
+C:\Users\luis_\Desktop\Bases de Datos Proyecto Moreno\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_AerolineaEdit.resources
+C:\Users\luis_\Desktop\Bases de Datos Proyecto Moreno\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_Aerolineas.resources
+C:\Users\luis_\Desktop\Bases de Datos Proyecto Moreno\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.Properties.Resources.resources
+C:\Users\luis_\Desktop\Bases de Datos Proyecto Moreno\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.csproj.GenerateResource.cache
+C:\Users\luis_\Desktop\Bases de Datos Proyecto Moreno\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.csproj.CoreCompileInputs.cache
+C:\Users\luis_\Desktop\Bases de Datos Proyecto Moreno\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.csproj.CopyComplete
+C:\Users\luis_\Desktop\Bases de Datos Proyecto Moreno\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.exe
+C:\Users\luis_\Desktop\Bases de Datos Proyecto Moreno\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.pdb
+C:\Users\luis_\Desktop\Bases de Datos Proyecto Moreno\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_Aeropuerto.resources
+C:\Users\luis_\Desktop\Bases de Datos Proyecto Moreno\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_AeropuertoEdit.resources
+C:\Users\luis_\Desktop\Bases de Datos Proyecto Moreno\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_Precio.resources
+C:\Users\luis_\Desktop\Bases de Datos Proyecto Moreno\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_PrecioEdit.resources
+C:\Users\luis_\Desktop\Bases de Datos Proyecto Moreno\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_BuscarVuelos.resources
+C:\Users\luis_\Desktop\Bases de Datos Proyecto Moreno\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_InformacionVuelo.resources
+C:\Users\luis_\Desktop\Bases de Datos Proyecto Moreno\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_Pais.resources
+C:\Users\luis_\Desktop\Bases de Datos Proyecto Moreno\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_PaisEdit.resources
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\WFProyectoVuelo.exe.config
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\WFProyectoVuelo.exe
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\WFProyectoVuelo.pdb
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\Datos.dll
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\EntityFramework.dll
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\Datos.pdb
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\Datos.dll.config
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.csprojAssemblyReference.cache
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_Aeropuerto.resources
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_AeropuertoEdit.resources
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_Asiento.resources
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_AsientoEdit.resources
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_AvionEdit.resources
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_Aviones.resources
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_BuscarVuelos.resources
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_Catalogos.resources
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_Clase.resources
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_ClaseEdit.resources
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_Estatus.resources
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_EstatusEdit.resources
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_InformacionVuelo.resources
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_MenuPrincipal.resources
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_Modelo.resources
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_ModeloEdit.resources
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_Moneda.resources
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_MonedaEdit.resources
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_Pais.resources
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_PaisEdit.resources
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_PerfilEdit.resources
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_Perfiles.resources
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_Precio.resources
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_PrecioEdit.resources
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_Ruta.resources
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_RutaEdit.resources
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_Tarjeta.resources
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_TarjetaEdit.resources
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_Ubicacion.resources
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_UbicacionEdit.resources
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_Usuario.resources
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_UsuarioEdit.resources
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.frm_Login.resources
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_AerolineaEdit.resources
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_Aerolineas.resources
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.Properties.Resources.resources
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.csproj.GenerateResource.cache
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.csproj.CoreCompileInputs.cache
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.csproj.CopyComplete
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.exe
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.pdb
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_Ciudad.resources
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_CiudadEdit.resources
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_MensajeRegistro.resources
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_OpcionRegistrar.resources
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_PagoTarjeta.resources
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_BoletoVendido.resources
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_FondoPantalla.resources
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_InformacionAsientos.resources
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_Vuelos.resources
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_VuelosEdit.resources
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_MisReservaciones.resources
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_MisCompras.resources
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\FlashControlV71.dll
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\ShockwaveFlashObjects.dll
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\bin\Debug\stdole.dll
+C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\WFProyectoVuelo\obj\Debug\WFProyectoVuelo.GUI.frm_TicketVenta.resources

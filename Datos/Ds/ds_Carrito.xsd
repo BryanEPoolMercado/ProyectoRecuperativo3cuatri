@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ds_Carrito" targetNamespace="http://tempuri.org/ds_Carrito.xsd" xmlns:mstns="http://tempuri.org/ds_Carrito.xsd" xmlns="http://tempuri.org/ds_Carrito.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ds_Carrito" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ds_Carrito" msprop:Generator_UserDSName="ds_Carrito">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dt_Carrito" msprop:Generator_TableClassName="dt_CarritoDataTable" msprop:Generator_TableVarName="tabledt_Carrito" msprop:Generator_TablePropName="dt_Carrito" msprop:Generator_RowDeletingName="dt_CarritoRowDeleting" msprop:Generator_RowChangingName="dt_CarritoRowChanging" msprop:Generator_RowEvHandlerName="dt_CarritoRowChangeEventHandler" msprop:Generator_RowDeletedName="dt_CarritoRowDeleted" msprop:Generator_UserTableName="dt_Carrito" msprop:Generator_RowChangedName="dt_CarritoRowChanged" msprop:Generator_RowEvArgName="dt_CarritoRowChangeEvent" msprop:Generator_RowClassName="dt_CarritoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id_Asiento" msprop:Generator_ColumnVarNameInTable="columnId_Asiento" msprop:Generator_ColumnPropNameInRow="Id_Asiento" msprop:Generator_ColumnPropNameInTable="Id_AsientoColumn" msprop:Generator_UserColumnName="Id_Asiento" type="xs:int" minOccurs="0" />
+              <xs:element name="letra" msprop:Generator_ColumnVarNameInTable="columnletra" msprop:Generator_ColumnPropNameInRow="letra" msprop:Generator_ColumnPropNameInTable="letraColumn" msprop:Generator_UserColumnName="letra" type="xs:string" minOccurs="0" />
+              <xs:element name="numero" msprop:Generator_ColumnVarNameInTable="columnnumero" msprop:Generator_ColumnPropNameInRow="numero" msprop:Generator_ColumnPropNameInTable="numeroColumn" msprop:Generator_UserColumnName="numero" type="xs:int" minOccurs="0" />
+              <xs:element name="precio" msprop:Generator_ColumnVarNameInTable="columnprecio" msprop:Generator_ColumnPropNameInRow="precio" msprop:Generator_ColumnPropNameInTable="precioColumn" msprop:Generator_UserColumnName="precio" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

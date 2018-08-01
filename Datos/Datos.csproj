@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A76EE941-F336-4CBA-BBC6-2376F4110AEA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Datos</RootNamespace>
+    <AssemblyName>Datos</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Ds\ds_Carrito.cs">
+      <DependentUpon>ds_Carrito.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ds\ds_Carrito.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_Carrito.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entidades\Vista_Aeropuerto.cs" />
+    <Compile Include="Entidades\Vista_Asiento.cs" />
+    <Compile Include="Entidades\Vista_Avion.cs" />
+    <Compile Include="Entidades\Vista_Ciudad.cs" />
+    <Compile Include="Entidades\Vista_clase.cs" />
+    <Compile Include="Entidades\Vista_DetalleCompra.cs" />
+    <Compile Include="Entidades\Vista_Precio.cs" />
+    <Compile Include="Entidades\Vista_Ruta.cs" />
+    <Compile Include="Entidades\Vista_Ubicaciones.cs" />
+    <Compile Include="Entidades\Vista_Usuario.cs" />
+    <Compile Include="Entidades\Vista_Vuelos.cs" />
+    <Compile Include="Modelo\Aerolinea.cs">
+      <DependentUpon>ModeloAerolineas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Aeropuerto.cs">
+      <DependentUpon>ModeloAerolineas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Asiento.cs">
+      <DependentUpon>ModeloAerolineas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Avion.cs">
+      <DependentUpon>ModeloAerolineas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Boleto.cs">
+      <DependentUpon>ModeloAerolineas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Ciudad.cs">
+      <DependentUpon>ModeloAerolineas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Clase.cs">
+      <DependentUpon>ModeloAerolineas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Compra.cs">
+      <DependentUpon>ModeloAerolineas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Detalle_Compra.cs">
+      <DependentUpon>ModeloAerolineas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Estatus.cs">
+      <DependentUpon>ModeloAerolineas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Modelo.cs">
+      <DependentUpon>ModeloAerolineas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\ModeloAerolineas.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModeloAerolineas.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\ModeloAerolineas.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModeloAerolineas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\ModeloAerolineas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModeloAerolineas.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Pais.cs">
+      <DependentUpon>ModeloAerolineas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Perfil.cs">
+      <DependentUpon>ModeloAerolineas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Precio.cs">
+      <DependentUpon>ModeloAerolineas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Ruta.cs">
+      <DependentUpon>ModeloAerolineas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Tarjeta.cs">
+      <DependentUpon>ModeloAerolineas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Tipo_de_Moneda.cs">
+      <DependentUpon>ModeloAerolineas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Tipo_de_Pago.cs">
+      <DependentUpon>ModeloAerolineas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Ubicacion.cs">
+      <DependentUpon>ModeloAerolineas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Usuario.cs">
+      <DependentUpon>ModeloAerolineas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Vuelos.cs">
+      <DependentUpon>ModeloAerolineas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Servicios\srv_Aerolinea.cs" />
+    <Compile Include="Servicios\srv_Aeropuerto.cs" />
+    <Compile Include="Servicios\srv_Asiento.cs" />
+    <Compile Include="Servicios\srv_Avion.cs" />
+    <Compile Include="Servicios\srv_Boleto.cs" />
+    <Compile Include="Servicios\srv_Ciudad.cs" />
+    <Compile Include="Servicios\srv_Clase.cs" />
+    <Compile Include="Servicios\srv_Compra.cs" />
+    <Compile Include="Servicios\srv_DatosUsuario.cs" />
+    <Compile Include="Servicios\srv_DetalleCompra.cs" />
+    <Compile Include="Servicios\srv_Estatus.cs" />
+    <Compile Include="Servicios\srv_Modelo.cs" />
+    <Compile Include="Servicios\srv_Moneda.cs" />
+    <Compile Include="Servicios\srv_Pais.cs" />
+    <Compile Include="Servicios\srv_Perfil.cs" />
+    <Compile Include="Servicios\srv_Precio.cs" />
+    <Compile Include="Servicios\srv_Ruta.cs" />
+    <Compile Include="Servicios\srv_Tarjeta.cs" />
+    <Compile Include="Servicios\srv_Ubicacion.cs" />
+    <Compile Include="Servicios\srv_Usuario.cs" />
+    <Compile Include="Servicios\srv_Vuelos.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <EntityDeploy Include="Modelo\ModeloAerolineas.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModeloAerolineas.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Ds\ds_Carrito.xsc">
+      <DependentUpon>ds_Carrito.xsd</DependentUpon>
+    </None>
+    <None Include="Ds\ds_Carrito.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_Carrito.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Ds\ds_Carrito.xss">
+      <DependentUpon>ds_Carrito.xsd</DependentUpon>
+    </None>
+    <None Include="Modelo\ModeloAerolineas.edmx.diagram">
+      <DependentUpon>ModeloAerolineas.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Datos.dll" />
+    <Content Include="bin\Debug\Datos.pdb" />
+    <Content Include="Modelo\ModeloAerolineas.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModeloAerolineas.edmx</DependentUpon>
+      <LastGenOutput>ModeloAerolineas.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Modelo\ModeloAerolineas.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModeloAerolineas.edmx</DependentUpon>
+      <LastGenOutput>ModeloAerolineas.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

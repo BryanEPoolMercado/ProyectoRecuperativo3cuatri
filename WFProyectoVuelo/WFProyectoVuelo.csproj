@@ -1,0 +1,564 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EAA60671-8AAF-4EB5-89EF-2758D2404F97}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WFProyectoVuelo</RootNamespace>
+    <AssemblyName>WFProyectoVuelo</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>C:\Users\bboyd\Desktop\AirFly_developmentProyect\Aerolineas_AirFly\bin\Debug\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GUI\frm_Aeropuerto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_Aeropuerto.Designer.cs">
+      <DependentUpon>frm_Aeropuerto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_AeropuertoEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_AeropuertoEdit.Designer.cs">
+      <DependentUpon>frm_AeropuertoEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_Asiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_Asiento.Designer.cs">
+      <DependentUpon>frm_Asiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_AsientoEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_AsientoEdit.Designer.cs">
+      <DependentUpon>frm_AsientoEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_AvionEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_AvionEdit.Designer.cs">
+      <DependentUpon>frm_AvionEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_Aviones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_Aviones.Designer.cs">
+      <DependentUpon>frm_Aviones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_BoletoVendido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_BoletoVendido.Designer.cs">
+      <DependentUpon>frm_BoletoVendido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_BuscarVuelos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_BuscarVuelos.Designer.cs">
+      <DependentUpon>frm_BuscarVuelos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_Catalogos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_Catalogos.Designer.cs">
+      <DependentUpon>frm_Catalogos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_Ciudad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_Ciudad.Designer.cs">
+      <DependentUpon>frm_Ciudad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_CiudadEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_CiudadEdit.Designer.cs">
+      <DependentUpon>frm_CiudadEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_Clase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_Clase.Designer.cs">
+      <DependentUpon>frm_Clase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_ClaseEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_ClaseEdit.Designer.cs">
+      <DependentUpon>frm_ClaseEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_Estatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_Estatus.Designer.cs">
+      <DependentUpon>frm_Estatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_EstatusEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_EstatusEdit.Designer.cs">
+      <DependentUpon>frm_EstatusEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_FondoPantalla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_FondoPantalla.Designer.cs">
+      <DependentUpon>frm_FondoPantalla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_InformacionAsientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_InformacionAsientos.Designer.cs">
+      <DependentUpon>frm_InformacionAsientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_InformacionVuelo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_InformacionVuelo.Designer.cs">
+      <DependentUpon>frm_InformacionVuelo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_MensajeRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_MensajeRegistro.Designer.cs">
+      <DependentUpon>frm_MensajeRegistro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_MenuPrincipal.Designer.cs">
+      <DependentUpon>frm_MenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_MisCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_MisCompras.Designer.cs">
+      <DependentUpon>frm_MisCompras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_MisReservaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_MisReservaciones.Designer.cs">
+      <DependentUpon>frm_MisReservaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_Modelo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_Modelo.Designer.cs">
+      <DependentUpon>frm_Modelo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_ModeloEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_ModeloEdit.Designer.cs">
+      <DependentUpon>frm_ModeloEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_Moneda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_Moneda.Designer.cs">
+      <DependentUpon>frm_Moneda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_MonedaEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_MonedaEdit.Designer.cs">
+      <DependentUpon>frm_MonedaEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_OpcionRegistrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_OpcionRegistrar.Designer.cs">
+      <DependentUpon>frm_OpcionRegistrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_PagoTarjeta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_PagoTarjeta.Designer.cs">
+      <DependentUpon>frm_PagoTarjeta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_Pais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_Pais.Designer.cs">
+      <DependentUpon>frm_Pais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_PaisEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_PaisEdit.Designer.cs">
+      <DependentUpon>frm_PaisEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_PerfilEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_PerfilEdit.Designer.cs">
+      <DependentUpon>frm_PerfilEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_Perfiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_Perfiles.Designer.cs">
+      <DependentUpon>frm_Perfiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_Precio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_Precio.Designer.cs">
+      <DependentUpon>frm_Precio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_PrecioEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_PrecioEdit.Designer.cs">
+      <DependentUpon>frm_PrecioEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_Ruta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_Ruta.Designer.cs">
+      <DependentUpon>frm_Ruta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_RutaEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_RutaEdit.Designer.cs">
+      <DependentUpon>frm_RutaEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_Tarjeta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_Tarjeta.Designer.cs">
+      <DependentUpon>frm_Tarjeta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_TarjetaEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_TarjetaEdit.Designer.cs">
+      <DependentUpon>frm_TarjetaEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_TicketVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_TicketVenta.Designer.cs">
+      <DependentUpon>frm_TicketVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_Ubicacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_Ubicacion.Designer.cs">
+      <DependentUpon>frm_Ubicacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_UbicacionEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_UbicacionEdit.Designer.cs">
+      <DependentUpon>frm_UbicacionEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_Usuario.Designer.cs">
+      <DependentUpon>frm_Usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_UsuarioEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_UsuarioEdit.Designer.cs">
+      <DependentUpon>frm_UsuarioEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_Vuelos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_Vuelos.Designer.cs">
+      <DependentUpon>frm_Vuelos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_VuelosEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_VuelosEdit.Designer.cs">
+      <DependentUpon>frm_VuelosEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_AerolineaEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_AerolineaEdit.Designer.cs">
+      <DependentUpon>frm_AerolineaEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_Aerolineas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_Aerolineas.Designer.cs">
+      <DependentUpon>frm_Aerolineas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reportes\Datos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Datos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Ticket.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ticket.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="GUI\frm_Aeropuerto.resx">
+      <DependentUpon>frm_Aeropuerto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_AeropuertoEdit.resx">
+      <DependentUpon>frm_AeropuertoEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_Asiento.resx">
+      <DependentUpon>frm_Asiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_AsientoEdit.resx">
+      <DependentUpon>frm_AsientoEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_AvionEdit.resx">
+      <DependentUpon>frm_AvionEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_Aviones.resx">
+      <DependentUpon>frm_Aviones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_BoletoVendido.resx">
+      <DependentUpon>frm_BoletoVendido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_BuscarVuelos.resx">
+      <DependentUpon>frm_BuscarVuelos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_Catalogos.resx">
+      <DependentUpon>frm_Catalogos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_Ciudad.resx">
+      <DependentUpon>frm_Ciudad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_CiudadEdit.resx">
+      <DependentUpon>frm_CiudadEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_Clase.resx">
+      <DependentUpon>frm_Clase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_ClaseEdit.resx">
+      <DependentUpon>frm_ClaseEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_Estatus.resx">
+      <DependentUpon>frm_Estatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_EstatusEdit.resx">
+      <DependentUpon>frm_EstatusEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_FondoPantalla.resx">
+      <DependentUpon>frm_FondoPantalla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_InformacionAsientos.resx">
+      <DependentUpon>frm_InformacionAsientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_InformacionVuelo.resx">
+      <DependentUpon>frm_InformacionVuelo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_MensajeRegistro.resx">
+      <DependentUpon>frm_MensajeRegistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_MenuPrincipal.resx">
+      <DependentUpon>frm_MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_MisCompras.resx">
+      <DependentUpon>frm_MisCompras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_MisReservaciones.resx">
+      <DependentUpon>frm_MisReservaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_Modelo.resx">
+      <DependentUpon>frm_Modelo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_ModeloEdit.resx">
+      <DependentUpon>frm_ModeloEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_Moneda.resx">
+      <DependentUpon>frm_Moneda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_MonedaEdit.resx">
+      <DependentUpon>frm_MonedaEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_OpcionRegistrar.resx">
+      <DependentUpon>frm_OpcionRegistrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_PagoTarjeta.resx">
+      <DependentUpon>frm_PagoTarjeta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_Pais.resx">
+      <DependentUpon>frm_Pais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_PaisEdit.resx">
+      <DependentUpon>frm_PaisEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_PerfilEdit.resx">
+      <DependentUpon>frm_PerfilEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_Perfiles.resx">
+      <DependentUpon>frm_Perfiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_Precio.resx">
+      <DependentUpon>frm_Precio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_PrecioEdit.resx">
+      <DependentUpon>frm_PrecioEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_Ruta.resx">
+      <DependentUpon>frm_Ruta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_RutaEdit.resx">
+      <DependentUpon>frm_RutaEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_Tarjeta.resx">
+      <DependentUpon>frm_Tarjeta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_TarjetaEdit.resx">
+      <DependentUpon>frm_TarjetaEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_TicketVenta.resx">
+      <DependentUpon>frm_TicketVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_Ubicacion.resx">
+      <DependentUpon>frm_Ubicacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_UbicacionEdit.resx">
+      <DependentUpon>frm_UbicacionEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_Usuario.resx">
+      <DependentUpon>frm_Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_UsuarioEdit.resx">
+      <DependentUpon>frm_UsuarioEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_Vuelos.resx">
+      <DependentUpon>frm_Vuelos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_VuelosEdit.resx">
+      <DependentUpon>frm_VuelosEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_AerolineaEdit.resx">
+      <DependentUpon>frm_AerolineaEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_Aerolineas.resx">
+      <DependentUpon>frm_Aerolineas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Reportes\Ticket.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Ticket.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Reportes\Datos.xsc">
+      <DependentUpon>Datos.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\Datos.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Datos.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\Datos.xss">
+      <DependentUpon>Datos.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\EntityFramework.dll" />
+    <Content Include="bin\EntityFramework.SqlServer.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Datos\Datos.csproj">
+      <Project>{a76ee941-f336-4cba-bbc6-2376f4110aea}</Project>
+      <Name>Datos</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

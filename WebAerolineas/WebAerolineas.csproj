@@ -1,0 +1,832 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A1E11F6D-CE93-4AA8-A42B-60BA8D9C3337}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebAerolineas</RootNamespace>
+    <AssemblyName>WebAerolineas</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\..\..\..\..\Proyecto 2A\Aerolineas_AirFly\Aerolineas_AirFly\bin\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.DataVisualization">
+      <HintPath>..\..\..\..\..\Web Version Marisa\WindowsWeb\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Backend\css\bootstrap-table.css" />
+    <Content Include="Backend\css\bootstrap-theme.css" />
+    <Content Include="Backend\css\bootstrap-theme.min.css" />
+    <Content Include="Backend\css\bootstrap.css" />
+    <Content Include="Backend\css\bootstrap.min.css" />
+    <Content Include="Backend\css\datepicker.css" />
+    <Content Include="Backend\css\datepicker3.css" />
+    <Content Include="Backend\css\font-awesome.min.css" />
+    <Content Include="Backend\css\styles.css" />
+    <Content Include="Backend\fonts\fontawesome-webfont.svg" />
+    <Content Include="Backend\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Backend\GUI\Aerolinea.aspx" />
+    <Content Include="Backend\GUI\Aeropuerto.aspx" />
+    <Content Include="Backend\GUI\Avion.aspx" />
+    <Content Include="Backend\GUI\Ciudad.aspx" />
+    <Content Include="Backend\GUI\MenuCatalogos.aspx" />
+    <Content Include="Backend\GUI\Modelos.aspx" />
+    <Content Include="Backend\GUI\Pais.aspx" />
+    <Content Include="Backend\GUI\Perfil.aspx" />
+    <Content Include="Backend\GUI\Ruta.aspx" />
+    <Content Include="Backend\GUI\Usuario.aspx" />
+    <Content Include="Backend\js\bootstrap-datepicker.js" />
+    <Content Include="Backend\js\bootstrap.js" />
+    <Content Include="Backend\js\bootstrap.min.js" />
+    <Content Include="Backend\js\chart-data.js" />
+    <Content Include="Backend\js\chart.min.js" />
+    <Content Include="Backend\js\custom.js" />
+    <Content Include="Backend\js\easypiechart-data.js" />
+    <Content Include="Backend\js\easypiechart.js" />
+    <Content Include="Backend\js\html5shiv.min.js" />
+    <Content Include="Backend\js\jquery-1.11.1.min.js" />
+    <Content Include="Backend\js\lumino.glyphs.js" />
+    <Content Include="Backend\js\npm.js" />
+    <Content Include="Backend\js\respond.min.js" />
+    <Content Include="Frontend\GUI\Inicio.aspx" />
+    <Content Include="Frontend\GUI\MenuPrincipal.aspx" />
+    <Content Include="Frontend\Recursos\css\login.css" />
+    <Content Include="Frontend\Recursos\css\nivo-slider-theme.css" />
+    <Content Include="Frontend\Recursos\css\responsive.css" />
+    <Content Include="Frontend\Recursos\css\style.css" />
+    <Content Include="Frontend\Recursos\img\about\1.jpg" />
+    <Content Include="Frontend\Recursos\img\about\2.jpg" />
+    <Content Include="Frontend\Recursos\img\apple-touch-icon.png" />
+    <Content Include="Frontend\Recursos\img\background\bg1.jpg" />
+    <Content Include="Frontend\Recursos\img\background\slider1.jpg" />
+    <Content Include="Frontend\Recursos\img\blog\1.jpg" />
+    <Content Include="Frontend\Recursos\img\blog\2.jpg" />
+    <Content Include="Frontend\Recursos\img\blog\3.jpg" />
+    <Content Include="Frontend\Recursos\img\blog\4.jpg" />
+    <Content Include="Frontend\Recursos\img\blog\5.jpg" />
+    <Content Include="Frontend\Recursos\img\blog\6.jpg" />
+    <Content Include="Frontend\Recursos\img\blog\b02.jpg" />
+    <Content Include="Frontend\Recursos\img\favicon.png" />
+    <Content Include="Frontend\Recursos\img\portfolio\1.jpg" />
+    <Content Include="Frontend\Recursos\img\portfolio\2.jpg" />
+    <Content Include="Frontend\Recursos\img\portfolio\3.jpg" />
+    <Content Include="Frontend\Recursos\img\portfolio\4.jpg" />
+    <Content Include="Frontend\Recursos\img\portfolio\5.jpg" />
+    <Content Include="Frontend\Recursos\img\portfolio\6.jpg" />
+    <Content Include="Frontend\Recursos\img\preloader.gif" />
+    <Content Include="Frontend\Recursos\img\slider\fondo1.jpg" />
+    <Content Include="Frontend\Recursos\img\slider\fondo2.jpg" />
+    <Content Include="Frontend\Recursos\img\slider\fondo3.jpg" />
+    <Content Include="Frontend\Recursos\img\slider\slider1 - Copy.jpg" />
+    <Content Include="Frontend\Recursos\img\slider\slider1.jpg" />
+    <Content Include="Frontend\Recursos\img\slider\slider2.jpg" />
+    <Content Include="Frontend\Recursos\img\slider\slider3.jpg" />
+    <Content Include="Frontend\Recursos\img\team\1.jpg" />
+    <Content Include="Frontend\Recursos\img\team\2.jpg" />
+    <Content Include="Frontend\Recursos\img\team\3.jpg" />
+    <Content Include="Frontend\Recursos\img\team\4.jpg" />
+    <Content Include="Frontend\Recursos\img\venubox\close.gif" />
+    <Content Include="Frontend\Recursos\img\venubox\next.gif" />
+    <Content Include="Frontend\Recursos\img\venubox\preload-circle.png" />
+    <Content Include="Frontend\Recursos\img\venubox\preload-dots.png" />
+    <Content Include="Frontend\Recursos\img\venubox\preload-ios.png" />
+    <Content Include="Frontend\Recursos\img\venubox\preload-quads.png" />
+    <Content Include="Frontend\Recursos\img\venubox\preload.png" />
+    <Content Include="Frontend\Recursos\img\venubox\prev.gif" />
+    <Content Include="Frontend\Recursos\js\main.js" />
+    <Content Include="Frontend\Recursos\lib\animate\animate.css" />
+    <Content Include="Frontend\Recursos\lib\animate\animate.min.css" />
+    <Content Include="Frontend\Recursos\lib\appear\jquery.appear.js" />
+    <Content Include="Frontend\Recursos\lib\bootstrap\css\bootstrap.css" />
+    <Content Include="Frontend\Recursos\lib\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Frontend\Recursos\lib\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Frontend\Recursos\lib\bootstrap\js\bootstrap.js" />
+    <Content Include="Frontend\Recursos\lib\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Frontend\Recursos\lib\easing\easing.js" />
+    <Content Include="Frontend\Recursos\lib\easing\easing.min.js" />
+    <Content Include="Frontend\Recursos\lib\font-awesome\css\font-awesome.css" />
+    <Content Include="Frontend\Recursos\lib\font-awesome\css\font-awesome.min.css" />
+    <Content Include="Frontend\Recursos\lib\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Frontend\Recursos\lib\isotope\isotope.pkgd.js" />
+    <Content Include="Frontend\Recursos\lib\isotope\isotope.pkgd.min.js" />
+    <Content Include="Frontend\Recursos\lib\jquery\jquery.min.js" />
+    <Content Include="Frontend\Recursos\lib\knob\jquery.knob.js" />
+    <Content Include="Frontend\Recursos\lib\nivo-slider\css\nivo-slider.css" />
+    <Content Include="Frontend\Recursos\lib\nivo-slider\img\arrows-2.png" />
+    <Content Include="Frontend\Recursos\lib\nivo-slider\img\arrows.png" />
+    <Content Include="Frontend\Recursos\lib\nivo-slider\img\arrow_left.svg" />
+    <Content Include="Frontend\Recursos\lib\nivo-slider\img\arrow_right.svg" />
+    <Content Include="Frontend\Recursos\lib\nivo-slider\img\bullets-2.png" />
+    <Content Include="Frontend\Recursos\lib\nivo-slider\img\bullets.png" />
+    <Content Include="Frontend\Recursos\lib\nivo-slider\img\loading-2.gif" />
+    <Content Include="Frontend\Recursos\lib\nivo-slider\img\loading.gif" />
+    <Content Include="Frontend\Recursos\lib\nivo-slider\js\jquery.nivo.slider.js" />
+    <Content Include="Frontend\Recursos\lib\owlcarousel\owl.carousel.css" />
+    <Content Include="Frontend\Recursos\lib\owlcarousel\owl.carousel.min.js" />
+    <Content Include="Frontend\Recursos\lib\owlcarousel\owl.transitions.css" />
+    <Content Include="Frontend\Recursos\lib\parallax\parallax.js" />
+    <Content Include="Frontend\Recursos\lib\venobox\venobox.css" />
+    <Content Include="Frontend\Recursos\lib\venobox\venobox.min.js" />
+    <Content Include="Frontend\Recursos\lib\wow\wow.js" />
+    <Content Include="Frontend\Recursos\lib\wow\wow.min.js" />
+    <Content Include="GUI\wfrm_AeropuertoEdit.aspx" />
+    <Content Include="GUI\wfrm_Aerolinea.aspx" />
+    <Content Include="GUI\wfrm_AerolineaEdit.aspx" />
+    <Content Include="GUI\wfrm_Aeropuerto.aspx" />
+    <Content Include="GUI\wfrm_Catalogos.aspx" />
+    <Content Include="GUI\wfrm_Ciudad.aspx" />
+    <Content Include="GUI\wfrm_CiudadEdit.aspx" />
+    <Content Include="GUI\wfrm_Login.aspx" />
+    <Content Include="GUI\wfrm_MenuPrincipal.aspx" />
+    <Content Include="GUI\wfrm_Modelo.aspx" />
+    <Content Include="GUI\wfrm_ModeloEdit.aspx" />
+    <Content Include="GUI\wfrm_Pais.aspx" />
+    <Content Include="GUI\wfrm_PaisEdit.aspx" />
+    <Content Include="GUI\wfrm_Perfil.aspx" />
+    <Content Include="GUI\wfrm_PerfilEdit.aspx" />
+    <Content Include="GUI\wfrm_Ruta.aspx" />
+    <Content Include="Recursos\css\animate.min.css" />
+    <Content Include="Recursos\css\bootstrap.css" />
+    <Content Include="Recursos\css\bootstrap\bootstrap-grid.css" />
+    <Content Include="Recursos\css\bootstrap\bootstrap-reboot.css" />
+    <Content Include="Recursos\css\bootstrap\bootstrap.css" />
+    <Content Include="Recursos\css\bootstrap\estilocatalogo.css" />
+    <Content Include="Recursos\css\font-awesome.min.css" />
+    <Content Include="Recursos\css\jquery-ui.css" />
+    <Content Include="Recursos\css\linearicons.css" />
+    <Content Include="Recursos\css\magnific-popup.css" />
+    <Content Include="Recursos\css\main.css" />
+    <Content Include="Recursos\css\misestilos.css" />
+    <Content Include="Recursos\css\nice-select.css" />
+    <Content Include="Recursos\css\owl.carousel.css" />
+    <Content Include="Recursos\fonts\fontawesome-webfont.svg" />
+    <Content Include="Recursos\fonts\Linearicons-Free.svg" />
+    <Content Include="Recursos\img\about-img.jpg" />
+    <Content Include="Recursos\img\about\info-img.jpg" />
+    <Content Include="Recursos\img\avion-comercial-3d-en-pleno-vuelo.jpg" />
+    <Content Include="Recursos\img\b1.jpg" />
+    <Content Include="Recursos\img\b2.jpg" />
+    <Content Include="Recursos\img\b3.jpg" />
+    <Content Include="Recursos\img\blog\ads-banner.jpg" />
+    <Content Include="Recursos\img\blog\blog-home-banner.jpg" />
+    <Content Include="Recursos\img\blog\c1.jpg" />
+    <Content Include="Recursos\img\blog\c2.jpg" />
+    <Content Include="Recursos\img\blog\c3.jpg" />
+    <Content Include="Recursos\img\blog\c4.jpg" />
+    <Content Include="Recursos\img\blog\c5.jpg" />
+    <Content Include="Recursos\img\blog\c6.jpg" />
+    <Content Include="Recursos\img\blog\cat-widget1.jpg" />
+    <Content Include="Recursos\img\blog\cat-widget2.jpg" />
+    <Content Include="Recursos\img\blog\cat-widget3.jpg" />
+    <Content Include="Recursos\img\blog\feature-img1.jpg" />
+    <Content Include="Recursos\img\blog\feature-img2.jpg" />
+    <Content Include="Recursos\img\blog\feature-img3.jpg" />
+    <Content Include="Recursos\img\blog\feature-img4.jpg" />
+    <Content Include="Recursos\img\blog\feature-img5.jpg" />
+    <Content Include="Recursos\img\blog\next.jpg" />
+    <Content Include="Recursos\img\blog\post-img1.jpg" />
+    <Content Include="Recursos\img\blog\post-img2.jpg" />
+    <Content Include="Recursos\img\blog\pp1.jpg" />
+    <Content Include="Recursos\img\blog\pp2.jpg" />
+    <Content Include="Recursos\img\blog\pp3.jpg" />
+    <Content Include="Recursos\img\blog\pp4.jpg" />
+    <Content Include="Recursos\img\blog\prev.jpg" />
+    <Content Include="Recursos\img\blog\s-img.jpg" />
+    <Content Include="Recursos\img\blog\user-info.png" />
+    <Content Include="Recursos\img\d1.jpg" />
+    <Content Include="Recursos\img\d2.jpg" />
+    <Content Include="Recursos\img\d3.jpg" />
+    <Content Include="Recursos\img\elements\a.jpg" />
+    <Content Include="Recursos\img\elements\a2.jpg" />
+    <Content Include="Recursos\img\elements\d.jpg" />
+    <Content Include="Recursos\img\elements\disabled-check.png" />
+    <Content Include="Recursos\img\elements\disabled-radio.png" />
+    <Content Include="Recursos\img\elements\f1.jpg" />
+    <Content Include="Recursos\img\elements\f2.jpg" />
+    <Content Include="Recursos\img\elements\f3.jpg" />
+    <Content Include="Recursos\img\elements\f4.jpg" />
+    <Content Include="Recursos\img\elements\f5.jpg" />
+    <Content Include="Recursos\img\elements\f6.jpg" />
+    <Content Include="Recursos\img\elements\f7.jpg" />
+    <Content Include="Recursos\img\elements\f8.jpg" />
+    <Content Include="Recursos\img\elements\g1.jpg" />
+    <Content Include="Recursos\img\elements\g2.jpg" />
+    <Content Include="Recursos\img\elements\g3.jpg" />
+    <Content Include="Recursos\img\elements\g4.jpg" />
+    <Content Include="Recursos\img\elements\g5.jpg" />
+    <Content Include="Recursos\img\elements\g6.jpg" />
+    <Content Include="Recursos\img\elements\g7.jpg" />
+    <Content Include="Recursos\img\elements\g8.jpg" />
+    <Content Include="Recursos\img\elements\primary-check.png" />
+    <Content Include="Recursos\img\elements\primary-radio.png" />
+    <Content Include="Recursos\img\elements\success-check.png" />
+    <Content Include="Recursos\img\elements\success-radio.png" />
+    <Content Include="Recursos\img\elements\user1.png" />
+    <Content Include="Recursos\img\elements\user2.png" />
+    <Content Include="Recursos\img\hero-bg.jpg" />
+    <Content Include="Recursos\img\hotels\about-img.jpg" />
+    <Content Include="Recursos\img\hotels\d1.jpg" />
+    <Content Include="Recursos\img\hotels\d2.jpg" />
+    <Content Include="Recursos\img\hotels\d3.jpg" />
+    <Content Include="Recursos\img\hotels\d4.jpg" />
+    <Content Include="Recursos\img\hotels\d5.jpg" />
+    <Content Include="Recursos\img\hotels\d6.jpg" />
+    <Content Include="Recursos\img\i1.jpg" />
+    <Content Include="Recursos\img\i2.jpg" />
+    <Content Include="Recursos\img\i3.jpg" />
+    <Content Include="Recursos\img\i4.jpg" />
+    <Content Include="Recursos\img\i5.jpg" />
+    <Content Include="Recursos\img\i6.jpg" />
+    <Content Include="Recursos\img\i7.jpg" />
+    <Content Include="Recursos\img\i8.jpg" />
+    <Content Include="Recursos\img\insurence\bullet.png" />
+    <Content Include="Recursos\img\insurence\i1.jpg" />
+    <Content Include="Recursos\img\insurence\i2.jpg" />
+    <Content Include="Recursos\img\logo.png" />
+    <Content Include="Recursos\img\o1.jpg" />
+    <Content Include="Recursos\img\o2.jpg" />
+    <Content Include="Recursos\img\o3.jpg" />
+    <Content Include="Recursos\img\o4.jpg" />
+    <Content Include="Recursos\img\packages\about-img.jpg" />
+    <Content Include="Recursos\img\packages\d1.jpg" />
+    <Content Include="Recursos\img\packages\d2.jpg" />
+    <Content Include="Recursos\img\packages\d3.jpg" />
+    <Content Include="Recursos\img\packages\d4.jpg" />
+    <Content Include="Recursos\img\packages\d5.jpg" />
+    <Content Include="Recursos\img\packages\d6.jpg" />
+    <Content Include="Recursos\img\packages\hot-deal.jpg" />
+    <Content Include="Recursos\img\price-bg.png" />
+    <Content Include="Recursos\img\top-banner.jpg" />
+    <Content Include="Recursos\img\ui-icons_444444_256x240.png" />
+    <Content Include="Recursos\js\catalogojava.js" />
+    <Content Include="Recursos\js\easing.min.js" />
+    <Content Include="Recursos\js\hoverIntent.js" />
+    <Content Include="Recursos\js\jquery-ui.js" />
+    <Content Include="Recursos\js\jquery.ajaxchimp.min.js" />
+    <Content Include="Recursos\js\jquery.magnific-popup.min.js" />
+    <Content Include="Recursos\js\jquery.nice-select.min.js" />
+    <Content Include="Recursos\js\mail-script.js" />
+    <Content Include="Recursos\js\main.js" />
+    <Content Include="Recursos\js\mijava.js" />
+    <Content Include="Recursos\js\owl.carousel.min.js" />
+    <Content Include="Recursos\js\popper.min.js" />
+    <Content Include="Recursos\js\superfish.min.js" />
+    <Content Include="Recursos\js\vendor\bootstrap.min.js" />
+    <Content Include="Recursos\js\vendor\jquery-2.2.4.min.js" />
+    <Content Include="Recursos\Travel - Doc\css\font-awesome.min.css" />
+    <Content Include="Recursos\Travel - Doc\css\main.css" />
+    <Content Include="Recursos\Travel - Doc\css\normalize.min.css" />
+    <Content Include="Recursos\Travel - Doc\fonts\fontawesome-webfont.svg" />
+    <Content Include="Recursos\Travel - Doc\img\logo.png" />
+    <Content Include="Recursos\Travel - Doc\index.html" />
+    <Content Include="Recursos\Travel - Doc\js\custom.js" />
+    <Content Include="Recursos\Travel - Doc\js\jquery-1.11.0.min.js" />
+    <Content Include="Recursos\Travel - Doc\js\jquery.nav.js" />
+    <Content Include="Recursos\Travel - Doc\syntax-highlighter\scripts\shAutoloader.js" />
+    <Content Include="Recursos\Travel - Doc\syntax-highlighter\scripts\shBrushAppleScript.js" />
+    <Content Include="Recursos\Travel - Doc\syntax-highlighter\scripts\shBrushAS3.js" />
+    <Content Include="Recursos\Travel - Doc\syntax-highlighter\scripts\shBrushBash.js" />
+    <Content Include="Recursos\Travel - Doc\syntax-highlighter\scripts\shBrushColdFusion.js" />
+    <Content Include="Recursos\Travel - Doc\syntax-highlighter\scripts\shBrushCpp.js" />
+    <Content Include="Recursos\Travel - Doc\syntax-highlighter\scripts\shBrushCSharp.js" />
+    <Content Include="Recursos\Travel - Doc\syntax-highlighter\scripts\shBrushCss.js" />
+    <Content Include="Recursos\Travel - Doc\syntax-highlighter\scripts\shBrushDelphi.js" />
+    <Content Include="Recursos\Travel - Doc\syntax-highlighter\scripts\shBrushDiff.js" />
+    <Content Include="Recursos\Travel - Doc\syntax-highlighter\scripts\shBrushErlang.js" />
+    <Content Include="Recursos\Travel - Doc\syntax-highlighter\scripts\shBrushGroovy.js" />
+    <Content Include="Recursos\Travel - Doc\syntax-highlighter\scripts\shBrushJava.js" />
+    <Content Include="Recursos\Travel - Doc\syntax-highlighter\scripts\shBrushJavaFX.js" />
+    <Content Include="Recursos\Travel - Doc\syntax-highlighter\scripts\shBrushJScript.js" />
+    <Content Include="Recursos\Travel - Doc\syntax-highlighter\scripts\shBrushPerl.js" />
+    <Content Include="Recursos\Travel - Doc\syntax-highlighter\scripts\shBrushPhp.js" />
+    <Content Include="Recursos\Travel - Doc\syntax-highlighter\scripts\shBrushPlain.js" />
+    <Content Include="Recursos\Travel - Doc\syntax-highlighter\scripts\shBrushPowerShell.js" />
+    <Content Include="Recursos\Travel - Doc\syntax-highlighter\scripts\shBrushPython.js" />
+    <Content Include="Recursos\Travel - Doc\syntax-highlighter\scripts\shBrushRuby.js" />
+    <Content Include="Recursos\Travel - Doc\syntax-highlighter\scripts\shBrushSass.js" />
+    <Content Include="Recursos\Travel - Doc\syntax-highlighter\scripts\shBrushScala.js" />
+    <Content Include="Recursos\Travel - Doc\syntax-highlighter\scripts\shBrushSql.js" />
+    <Content Include="Recursos\Travel - Doc\syntax-highlighter\scripts\shBrushVb.js" />
+    <Content Include="Recursos\Travel - Doc\syntax-highlighter\scripts\shBrushXml.js" />
+    <Content Include="Recursos\Travel - Doc\syntax-highlighter\scripts\shCore.js" />
+    <Content Include="Recursos\Travel - Doc\syntax-highlighter\scripts\shLegacy.js" />
+    <Content Include="Recursos\Travel - Doc\syntax-highlighter\styles\shCore.css" />
+    <Content Include="Recursos\Travel - Doc\syntax-highlighter\styles\shCoreDefault.css" />
+    <Content Include="Recursos\Travel - Doc\syntax-highlighter\styles\shCoreDjango.css" />
+    <Content Include="Recursos\Travel - Doc\syntax-highlighter\styles\shCoreEclipse.css" />
+    <Content Include="Recursos\Travel - Doc\syntax-highlighter\styles\shCoreEmacs.css" />
+    <Content Include="Recursos\Travel - Doc\syntax-highlighter\styles\shCoreFadeToGrey.css" />
+    <Content Include="Recursos\Travel - Doc\syntax-highlighter\styles\shCoreMDUltra.css" />
+    <Content Include="Recursos\Travel - Doc\syntax-highlighter\styles\shCoreMidnight.css" />
+    <Content Include="Recursos\Travel - Doc\syntax-highlighter\styles\shCoreRDark.css" />
+    <Content Include="Recursos\Travel - Doc\syntax-highlighter\styles\shThemeDefault.css" />
+    <Content Include="Recursos\Travel - Doc\syntax-highlighter\styles\shThemeDjango.css" />
+    <Content Include="Recursos\Travel - Doc\syntax-highlighter\styles\shThemeEclipse.css" />
+    <Content Include="Recursos\Travel - Doc\syntax-highlighter\styles\shThemeEmacs.css" />
+    <Content Include="Recursos\Travel - Doc\syntax-highlighter\styles\shThemeFadeToGrey.css" />
+    <Content Include="Recursos\Travel - Doc\syntax-highlighter\styles\shThemeMDUltra.css" />
+    <Content Include="Recursos\Travel - Doc\syntax-highlighter\styles\shThemeMidnight.css" />
+    <Content Include="Recursos\Travel - Doc\syntax-highlighter\styles\shThemeRDark.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Backend\GUI\Aerolinea.aspx.cs">
+      <DependentUpon>Aerolinea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Backend\GUI\Aerolinea.aspx.designer.cs">
+      <DependentUpon>Aerolinea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Backend\GUI\Aeropuerto.aspx.cs">
+      <DependentUpon>Aeropuerto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Backend\GUI\Aeropuerto.aspx.designer.cs">
+      <DependentUpon>Aeropuerto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Backend\GUI\Avion.aspx.cs">
+      <DependentUpon>Avion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Backend\GUI\Avion.aspx.designer.cs">
+      <DependentUpon>Avion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Backend\GUI\Ciudad.aspx.cs">
+      <DependentUpon>Ciudad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Backend\GUI\Ciudad.aspx.designer.cs">
+      <DependentUpon>Ciudad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Backend\GUI\MenuCatalogos.aspx.cs">
+      <DependentUpon>MenuCatalogos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Backend\GUI\MenuCatalogos.aspx.designer.cs">
+      <DependentUpon>MenuCatalogos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Backend\GUI\Modelos.aspx.cs">
+      <DependentUpon>Modelos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Backend\GUI\Modelos.aspx.designer.cs">
+      <DependentUpon>Modelos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Backend\GUI\Pais.aspx.cs">
+      <DependentUpon>Pais.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Backend\GUI\Pais.aspx.designer.cs">
+      <DependentUpon>Pais.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Backend\GUI\Perfil.aspx.cs">
+      <DependentUpon>Perfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Backend\GUI\Perfil.aspx.designer.cs">
+      <DependentUpon>Perfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Backend\GUI\Ruta.aspx.cs">
+      <DependentUpon>Ruta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Backend\GUI\Ruta.aspx.designer.cs">
+      <DependentUpon>Ruta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Backend\GUI\Usuario.aspx.cs">
+      <DependentUpon>Usuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Backend\GUI\Usuario.aspx.designer.cs">
+      <DependentUpon>Usuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Backend\MASTER\Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Backend\MASTER\Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend\GUI\Inicio.aspx.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frontend\GUI\Inicio.aspx.designer.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend\GUI\MenuPrincipal.aspx.cs">
+      <DependentUpon>MenuPrincipal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frontend\GUI\MenuPrincipal.aspx.designer.cs">
+      <DependentUpon>MenuPrincipal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend\MasterPage\FrontEnd.Master.cs">
+      <DependentUpon>FrontEnd.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frontend\MasterPage\FrontEnd.Master.designer.cs">
+      <DependentUpon>FrontEnd.Master</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\wfrm_AeropuertoEdit.aspx.cs">
+      <DependentUpon>wfrm_AeropuertoEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\wfrm_AeropuertoEdit.aspx.designer.cs">
+      <DependentUpon>wfrm_AeropuertoEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\wfrm_Aerolinea.aspx.cs">
+      <DependentUpon>wfrm_Aerolinea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\wfrm_Aerolinea.aspx.designer.cs">
+      <DependentUpon>wfrm_Aerolinea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\wfrm_AerolineaEdit.aspx.cs">
+      <DependentUpon>wfrm_AerolineaEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\wfrm_AerolineaEdit.aspx.designer.cs">
+      <DependentUpon>wfrm_AerolineaEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\wfrm_Aeropuerto.aspx.cs">
+      <DependentUpon>wfrm_Aeropuerto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\wfrm_Aeropuerto.aspx.designer.cs">
+      <DependentUpon>wfrm_Aeropuerto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\wfrm_Catalogos.aspx.cs">
+      <DependentUpon>wfrm_Catalogos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\wfrm_Catalogos.aspx.designer.cs">
+      <DependentUpon>wfrm_Catalogos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\wfrm_Ciudad.aspx.cs">
+      <DependentUpon>wfrm_Ciudad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\wfrm_Ciudad.aspx.designer.cs">
+      <DependentUpon>wfrm_Ciudad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\wfrm_CiudadEdit.aspx.cs">
+      <DependentUpon>wfrm_CiudadEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\wfrm_CiudadEdit.aspx.designer.cs">
+      <DependentUpon>wfrm_CiudadEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\wfrm_Login.aspx.cs">
+      <DependentUpon>wfrm_Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\wfrm_Login.aspx.designer.cs">
+      <DependentUpon>wfrm_Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\wfrm_MenuPrincipal.aspx.cs">
+      <DependentUpon>wfrm_MenuPrincipal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\wfrm_MenuPrincipal.aspx.designer.cs">
+      <DependentUpon>wfrm_MenuPrincipal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\wfrm_Modelo.aspx.cs">
+      <DependentUpon>wfrm_Modelo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\wfrm_Modelo.aspx.designer.cs">
+      <DependentUpon>wfrm_Modelo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\wfrm_ModeloEdit.aspx.cs">
+      <DependentUpon>wfrm_ModeloEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\wfrm_ModeloEdit.aspx.designer.cs">
+      <DependentUpon>wfrm_ModeloEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\wfrm_Pais.aspx.cs">
+      <DependentUpon>wfrm_Pais.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\wfrm_Pais.aspx.designer.cs">
+      <DependentUpon>wfrm_Pais.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\wfrm_PaisEdit.aspx.cs">
+      <DependentUpon>wfrm_PaisEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\wfrm_PaisEdit.aspx.designer.cs">
+      <DependentUpon>wfrm_PaisEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\wfrm_Perfil.aspx.cs">
+      <DependentUpon>wfrm_Perfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\wfrm_Perfil.aspx.designer.cs">
+      <DependentUpon>wfrm_Perfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\wfrm_PerfilEdit.aspx.cs">
+      <DependentUpon>wfrm_PerfilEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\wfrm_PerfilEdit.aspx.designer.cs">
+      <DependentUpon>wfrm_PerfilEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\wfrm_Ruta.aspx.cs">
+      <DependentUpon>wfrm_Ruta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\wfrm_Ruta.aspx.designer.cs">
+      <DependentUpon>wfrm_Ruta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\mpAerolineas.Master.cs">
+      <DependentUpon>mpAerolineas.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\mpAerolineas.Master.designer.cs">
+      <DependentUpon>mpAerolineas.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterPage\mpAerolineas.Master" />
+    <Content Include="Backend\MASTER\Site1.Master" />
+    <Content Include="Backend\css\bootstrap-theme.css.map" />
+    <Content Include="Backend\css\bootstrap-theme.min.css.map" />
+    <Content Include="Backend\css\bootstrap.css.map" />
+    <Content Include="Backend\css\bootstrap.min.css.map" />
+    <Content Include="Backend\fonts\fontawesome-webfont.eot" />
+    <Content Include="Backend\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Backend\fonts\fontawesome-webfont.woff" />
+    <Content Include="Backend\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Backend\fonts\FontAwesome.otf" />
+    <Content Include="Backend\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Backend\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Backend\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Backend\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Backend\sass\.sass-cache\deff34d1f5b7167181b556002c25068d6adc024d\styles.scssc" />
+    <Content Include="Backend\sass\styles.scss" />
+    <Content Include="Backend\tables\data1.json" />
+    <Content Include="Backend\tables\data2.json" />
+    <Content Include="Frontend\Recursos\lib\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Frontend\Recursos\lib\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Frontend\Recursos\lib\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Frontend\Recursos\lib\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Frontend\Recursos\lib\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Frontend\Recursos\lib\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Frontend\Recursos\lib\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Frontend\Recursos\lib\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Frontend\Recursos\lib\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="Frontend\MasterPage\FrontEnd.Master" />
+    <None Include="packages.config" />
+    <Content Include="Recursos\css\.DS_Store" />
+    <Content Include="Recursos\css\bootstrap.map" />
+    <Content Include="Recursos\css\main.map" />
+    <Content Include="Recursos\fonts\fontawesome-webfont.eot" />
+    <Content Include="Recursos\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Recursos\fonts\fontawesome-webfont.woff" />
+    <Content Include="Recursos\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Recursos\fonts\FontAwesome.otf" />
+    <Content Include="Recursos\fonts\Linearicons-Free.eot" />
+    <Content Include="Recursos\fonts\Linearicons-Free.ttf" />
+    <Content Include="Recursos\fonts\Linearicons-Free.woff" />
+    <Content Include="Recursos\fonts\Linearicons-Free.woff2" />
+    <Content Include="Recursos\img\.DS_Store" />
+    <Content Include="Recursos\img\blog\.DS_Store" />
+    <Content Include="Recursos\img\elements\.DS_Store" />
+    <Content Include="Recursos\js\.DS_Store" />
+    <Content Include="Recursos\scss\.DS_Store" />
+    <Content Include="Recursos\scss\bootstrap.scss" />
+    <Content Include="Recursos\scss\bootstrap\.DS_Store" />
+    <Content Include="Recursos\scss\bootstrap\bootstrap-grid.scss" />
+    <Content Include="Recursos\scss\bootstrap\bootstrap-reboot.scss" />
+    <Content Include="Recursos\scss\bootstrap\bootstrap.scss" />
+    <Content Include="Recursos\scss\bootstrap\mixins\_alert.scss" />
+    <Content Include="Recursos\scss\bootstrap\mixins\_background-variant.scss" />
+    <Content Include="Recursos\scss\bootstrap\mixins\_badge.scss" />
+    <Content Include="Recursos\scss\bootstrap\mixins\_border-radius.scss" />
+    <Content Include="Recursos\scss\bootstrap\mixins\_box-shadow.scss" />
+    <Content Include="Recursos\scss\bootstrap\mixins\_breakpoints.scss" />
+    <Content Include="Recursos\scss\bootstrap\mixins\_buttons.scss" />
+    <Content Include="Recursos\scss\bootstrap\mixins\_caret.scss" />
+    <Content Include="Recursos\scss\bootstrap\mixins\_clearfix.scss" />
+    <Content Include="Recursos\scss\bootstrap\mixins\_float.scss" />
+    <Content Include="Recursos\scss\bootstrap\mixins\_forms.scss" />
+    <Content Include="Recursos\scss\bootstrap\mixins\_gradients.scss" />
+    <Content Include="Recursos\scss\bootstrap\mixins\_grid-framework.scss" />
+    <Content Include="Recursos\scss\bootstrap\mixins\_grid.scss" />
+    <Content Include="Recursos\scss\bootstrap\mixins\_hover.scss" />
+    <Content Include="Recursos\scss\bootstrap\mixins\_image.scss" />
+    <Content Include="Recursos\scss\bootstrap\mixins\_list-group.scss" />
+    <Content Include="Recursos\scss\bootstrap\mixins\_lists.scss" />
+    <Content Include="Recursos\scss\bootstrap\mixins\_nav-divider.scss" />
+    <Content Include="Recursos\scss\bootstrap\mixins\_navbar-align.scss" />
+    <Content Include="Recursos\scss\bootstrap\mixins\_pagination.scss" />
+    <Content Include="Recursos\scss\bootstrap\mixins\_reset-text.scss" />
+    <Content Include="Recursos\scss\bootstrap\mixins\_resize.scss" />
+    <Content Include="Recursos\scss\bootstrap\mixins\_screen-reader.scss" />
+    <Content Include="Recursos\scss\bootstrap\mixins\_size.scss" />
+    <Content Include="Recursos\scss\bootstrap\mixins\_table-row.scss" />
+    <Content Include="Recursos\scss\bootstrap\mixins\_text-emphasis.scss" />
+    <Content Include="Recursos\scss\bootstrap\mixins\_text-hide.scss" />
+    <Content Include="Recursos\scss\bootstrap\mixins\_text-truncate.scss" />
+    <Content Include="Recursos\scss\bootstrap\mixins\_transition.scss" />
+    <Content Include="Recursos\scss\bootstrap\mixins\_visibility.scss" />
+    <Content Include="Recursos\scss\bootstrap\utilities\_align.scss" />
+    <Content Include="Recursos\scss\bootstrap\utilities\_background.scss" />
+    <Content Include="Recursos\scss\bootstrap\utilities\_borders.scss" />
+    <Content Include="Recursos\scss\bootstrap\utilities\_clearfix.scss" />
+    <Content Include="Recursos\scss\bootstrap\utilities\_display.scss" />
+    <Content Include="Recursos\scss\bootstrap\utilities\_embed.scss" />
+    <Content Include="Recursos\scss\bootstrap\utilities\_flex.scss" />
+    <Content Include="Recursos\scss\bootstrap\utilities\_float.scss" />
+    <Content Include="Recursos\scss\bootstrap\utilities\_position.scss" />
+    <Content Include="Recursos\scss\bootstrap\utilities\_screenreaders.scss" />
+    <Content Include="Recursos\scss\bootstrap\utilities\_sizing.scss" />
+    <Content Include="Recursos\scss\bootstrap\utilities\_spacing.scss" />
+    <Content Include="Recursos\scss\bootstrap\utilities\_text.scss" />
+    <Content Include="Recursos\scss\bootstrap\utilities\_visibility.scss" />
+    <Content Include="Recursos\scss\bootstrap\_alert.scss" />
+    <Content Include="Recursos\scss\bootstrap\_badge.scss" />
+    <Content Include="Recursos\scss\bootstrap\_breadcrumb.scss" />
+    <Content Include="Recursos\scss\bootstrap\_button-group.scss" />
+    <Content Include="Recursos\scss\bootstrap\_buttons.scss" />
+    <Content Include="Recursos\scss\bootstrap\_card.scss" />
+    <Content Include="Recursos\scss\bootstrap\_carousel.scss" />
+    <Content Include="Recursos\scss\bootstrap\_close.scss" />
+    <Content Include="Recursos\scss\bootstrap\_code.scss" />
+    <Content Include="Recursos\scss\bootstrap\_custom-forms.scss" />
+    <Content Include="Recursos\scss\bootstrap\_dropdown.scss" />
+    <Content Include="Recursos\scss\bootstrap\_forms.scss" />
+    <Content Include="Recursos\scss\bootstrap\_functions.scss" />
+    <Content Include="Recursos\scss\bootstrap\_grid.scss" />
+    <Content Include="Recursos\scss\bootstrap\_images.scss" />
+    <Content Include="Recursos\scss\bootstrap\_input-group.scss" />
+    <Content Include="Recursos\scss\bootstrap\_jumbotron.scss" />
+    <Content Include="Recursos\scss\bootstrap\_list-group.scss" />
+    <Content Include="Recursos\scss\bootstrap\_media.scss" />
+    <Content Include="Recursos\scss\bootstrap\_mixins.scss" />
+    <Content Include="Recursos\scss\bootstrap\_modal.scss" />
+    <Content Include="Recursos\scss\bootstrap\_nav.scss" />
+    <Content Include="Recursos\scss\bootstrap\_navbar.scss" />
+    <Content Include="Recursos\scss\bootstrap\_pagination.scss" />
+    <Content Include="Recursos\scss\bootstrap\_popover.scss" />
+    <Content Include="Recursos\scss\bootstrap\_print.scss" />
+    <Content Include="Recursos\scss\bootstrap\_progress.scss" />
+    <Content Include="Recursos\scss\bootstrap\_reboot.scss" />
+    <Content Include="Recursos\scss\bootstrap\_root.scss" />
+    <Content Include="Recursos\scss\bootstrap\_tables.scss" />
+    <Content Include="Recursos\scss\bootstrap\_tooltip.scss" />
+    <Content Include="Recursos\scss\bootstrap\_transitions.scss" />
+    <Content Include="Recursos\scss\bootstrap\_type.scss" />
+    <Content Include="Recursos\scss\bootstrap\_utilities.scss" />
+    <Content Include="Recursos\scss\bootstrap\_variables.scss" />
+    <Content Include="Recursos\scss\main.scss" />
+    <Content Include="Recursos\scss\theme\.DS_Store" />
+    <Content Include="Recursos\scss\theme\_about.scss" />
+    <Content Include="Recursos\scss\theme\_blog.scss" />
+    <Content Include="Recursos\scss\theme\_contact.scss" />
+    <Content Include="Recursos\scss\theme\_elements.scss" />
+    <Content Include="Recursos\scss\theme\_flexbox.scss" />
+    <Content Include="Recursos\scss\theme\_footer.scss" />
+    <Content Include="Recursos\scss\theme\_header.scss" />
+    <Content Include="Recursos\scss\theme\_home.scss" />
+    <Content Include="Recursos\scss\theme\_insurence.scss" />
+    <Content Include="Recursos\scss\theme\_mixins.scss" />
+    <Content Include="Recursos\scss\theme\_packages.scss" />
+    <Content Include="Recursos\scss\theme\_reset.scss" />
+    <Content Include="Recursos\scss\theme\_variables.scss" />
+    <Content Include="Recursos\Travel - Doc\.DS_Store" />
+    <Content Include="Recursos\Travel - Doc\css\.DS_Store" />
+    <Content Include="Recursos\Travel - Doc\fonts\.DS_Store" />
+    <Content Include="Recursos\Travel - Doc\fonts\fontawesome-webfont.eot" />
+    <Content Include="Recursos\Travel - Doc\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Recursos\Travel - Doc\fonts\fontawesome-webfont.woff" />
+    <Content Include="Recursos\Travel - Doc\fonts\FontAwesome.otf" />
+    <Content Include="Recursos\Travel - Doc\img\.DS_Store" />
+    <Content Include="Recursos\Travel - Doc\js\.DS_Store" />
+    <Content Include="Recursos\Travel - Doc\syntax-highlighter\.DS_Store" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Datos\Datos.csproj">
+      <Project>{a76ee941-f336-4cba-bbc6-2376f4110aea}</Project>
+      <Name>Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WFProyectoVuelo\WFProyectoVuelo.csproj">
+      <Project>{eaa60671-8aaf-4eb5-89ef-2758d2404f97}</Project>
+      <Name>WFProyectoVuelo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53774</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:53774/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

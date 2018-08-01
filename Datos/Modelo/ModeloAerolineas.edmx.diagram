@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="be0c2a82ce444adb906dfc65d5700657" Name="Diagram1" ZoomLevel="88">
+        <EntityTypeShape EntityType="PROYECTOVUELO03Model.Aerolinea" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PROYECTOVUELO03Model.Aeropuerto" Width="1.5" PointX="3" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PROYECTOVUELO03Model.Asiento" Width="1.5" PointX="8.25" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PROYECTOVUELO03Model.Avion" Width="1.5" PointX="3" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PROYECTOVUELO03Model.Boleto" Width="1.5" PointX="10.5" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PROYECTOVUELO03Model.Ciudad" Width="1.5" PointX="0.75" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PROYECTOVUELO03Model.Clase" Width="1.5" PointX="5.25" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PROYECTOVUELO03Model.Compra" Width="1.5" PointX="10.5" PointY="18" IsExpanded="true" />
+        <EntityTypeShape EntityType="PROYECTOVUELO03Model.Detalle_Compra" Width="1.5" PointX="12.75" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PROYECTOVUELO03Model.Estatus" Width="1.5" PointX="8.25" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PROYECTOVUELO03Model.Modelo" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PROYECTOVUELO03Model.Pais" Width="1.5" PointX="1.5" PointY="12.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PROYECTOVUELO03Model.Perfil" Width="1.5" PointX="6" PointY="23" IsExpanded="true" />
+        <EntityTypeShape EntityType="PROYECTOVUELO03Model.Precio" Width="1.5" PointX="7.5" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PROYECTOVUELO03Model.Ruta" Width="1.5" PointX="5.25" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PROYECTOVUELO03Model.Tarjeta" Width="1.5" PointX="6" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PROYECTOVUELO03Model.Tipo_de_Moneda" Width="1.5" PointX="8.25" PointY="16.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PROYECTOVUELO03Model.Tipo_de_Pago" Width="1.5" PointX="8.25" PointY="18.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PROYECTOVUELO03Model.Ubicacion" Width="1.5" PointX="5.25" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="PROYECTOVUELO03Model.Usuario" Width="1.5" PointX="8.25" PointY="22" IsExpanded="true" />
+        <EntityTypeShape EntityType="PROYECTOVUELO03Model.Vuelos" Width="1.5" PointX="8.25" PointY="7.125" IsExpanded="true" />
+        <AssociationConnector Association="PROYECTOVUELO03Model.FK_Idaerolinea" ManuallyRouted="false" />
+        <AssociationConnector Association="PROYECTOVUELO03Model.FK_Idaeropuertoori" ManuallyRouted="false" />
+        <AssociationConnector Association="PROYECTOVUELO03Model.FK_Idciudad" ManuallyRouted="false" />
+        <AssociationConnector Association="PROYECTOVUELO03Model.FK_Ideropuertodest" ManuallyRouted="false" />
+        <AssociationConnector Association="PROYECTOVUELO03Model.FK_Idasiento" ManuallyRouted="false" />
+        <AssociationConnector Association="PROYECTOVUELO03Model.FK_Idavion" ManuallyRouted="false" />
+        <AssociationConnector Association="PROYECTOVUELO03Model.FK_Idavion1" ManuallyRouted="false" />
+        <AssociationConnector Association="PROYECTOVUELO03Model.FK_Idavion2" ManuallyRouted="false" />
+        <AssociationConnector Association="PROYECTOVUELO03Model.FK_idavion3" ManuallyRouted="false" />
+        <AssociationConnector Association="PROYECTOVUELO03Model.FK_Idmodelo" ManuallyRouted="false" />
+        <AssociationConnector Association="PROYECTOVUELO03Model.FK_Idboleto" ManuallyRouted="false" />
+        <AssociationConnector Association="PROYECTOVUELO03Model.FK_Idvuelo" ManuallyRouted="false" />
+        <AssociationConnector Association="PROYECTOVUELO03Model.FK_Idpais" ManuallyRouted="false" />
+        <AssociationConnector Association="PROYECTOVUELO03Model.FK_Idseccion1" ManuallyRouted="false" />
+        <AssociationConnector Association="PROYECTOVUELO03Model.FK_Idcompra" ManuallyRouted="false" />
+        <AssociationConnector Association="PROYECTOVUELO03Model.FK_Idmoneda" ManuallyRouted="false" />
+        <AssociationConnector Association="PROYECTOVUELO03Model.FK_Idpago" ManuallyRouted="false" />
+        <AssociationConnector Association="PROYECTOVUELO03Model.FK_Idtipopago" ManuallyRouted="false" />
+        <AssociationConnector Association="PROYECTOVUELO03Model.FK_Idusuario" ManuallyRouted="false" />
+        <AssociationConnector Association="PROYECTOVUELO03Model.FK_Idperfil" ManuallyRouted="false" />
+        <AssociationConnector Association="PROYECTOVUELO03Model.FK_Idruta1" ManuallyRouted="false" />
+        <AssociationConnector Association="PROYECTOVUELO03Model.FK_Idruta" ManuallyRouted="false" />
+        <AssociationConnector Association="PROYECTOVUELO03Model.FK_Idtarjeta" ManuallyRouted="false" />
+        <AssociationConnector Association="PROYECTOVUELO03Model.FK_Idseccion11" />
+        <AssociationConnector Association="PROYECTOVUELO03Model.FK_Idvuelo11" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
