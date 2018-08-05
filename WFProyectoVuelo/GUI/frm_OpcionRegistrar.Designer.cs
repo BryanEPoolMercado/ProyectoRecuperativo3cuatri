@@ -128,7 +128,7 @@
             // btn_CancelarRegistro
             // 
             this.btn_CancelarRegistro.Activecolor = System.Drawing.Color.Transparent;
-            this.btn_CancelarRegistro.BackColor = System.Drawing.Color.Transparent;
+            this.btn_CancelarRegistro.BackColor = System.Drawing.Color.Blue;
             this.btn_CancelarRegistro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_CancelarRegistro.BorderRadius = 0;
             this.btn_CancelarRegistro.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -150,7 +150,7 @@
             this.btn_CancelarRegistro.Location = new System.Drawing.Point(274, 564);
             this.btn_CancelarRegistro.Margin = new System.Windows.Forms.Padding(5);
             this.btn_CancelarRegistro.Name = "btn_CancelarRegistro";
-            this.btn_CancelarRegistro.Normalcolor = System.Drawing.Color.Transparent;
+            this.btn_CancelarRegistro.Normalcolor = System.Drawing.Color.Blue;
             this.btn_CancelarRegistro.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(115)))), ((int)(((byte)(166)))));
             this.btn_CancelarRegistro.OnHoverTextColor = System.Drawing.Color.White;
             this.btn_CancelarRegistro.selected = false;
@@ -165,7 +165,7 @@
             // btn_Registrarse
             // 
             this.btn_Registrarse.Activecolor = System.Drawing.Color.Transparent;
-            this.btn_Registrarse.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Registrarse.BackColor = System.Drawing.Color.Blue;
             this.btn_Registrarse.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_Registrarse.BorderRadius = 0;
             this.btn_Registrarse.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -187,7 +187,7 @@
             this.btn_Registrarse.Location = new System.Drawing.Point(65, 564);
             this.btn_Registrarse.Margin = new System.Windows.Forms.Padding(5);
             this.btn_Registrarse.Name = "btn_Registrarse";
-            this.btn_Registrarse.Normalcolor = System.Drawing.Color.Transparent;
+            this.btn_Registrarse.Normalcolor = System.Drawing.Color.Blue;
             this.btn_Registrarse.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(115)))), ((int)(((byte)(166)))));
             this.btn_Registrarse.OnHoverTextColor = System.Drawing.Color.White;
             this.btn_Registrarse.selected = false;

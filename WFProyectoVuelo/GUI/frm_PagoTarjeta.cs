@@ -78,7 +78,7 @@ namespace WFProyectoVuelo.GUI
                     srvdetcomp.AgregarDetalleCompra(objdetcomp);
 
                 }
-                frm_BoletoVendido venta = new frm_BoletoVendido();
+                frm_BoletoVendido venta = new frm_BoletoVendido(idcompra);
                 venta.ShowDialog();                
             }
             else

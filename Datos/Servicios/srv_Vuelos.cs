@@ -182,5 +182,33 @@ namespace Datos.Servicios
                 throw new Exception("Verifique que los datos sean correctos");
             }
         }
+        public List<Vista_Vuelos> VuelosWeb()
+        {
+
+            modeloavion = new PROYECTOVUELO03Entities();
+            var selectavion = (from vue in modeloavion.Vuelos
+                               join avi in modeloavion.Avion on vue.Id_Avion equals avi.Id_Avion
+                               join mod in modeloavion.Modelo on avi.IdModelo equals mod.IdModelo
+                               join rut in modeloavion.Ruta on vue.Id_Ruta equals rut.Id_Ruta
+                               join ao in modeloavion.Aeropuerto on rut.Origen_Aeropuerto equals ao.Id_Aeropuerto
+                               join ad in modeloavion.Aeropuerto on rut.Destino_Aeropuerto equals ad.Id_Aeropuerto
+                               join aero in modeloavion.Aerolinea on avi.Id_Aerolinea equals aero.Id_Aerolinea
+
+                               select new Vista_Vuelos
+                               {
+                                   Id_Vuelo = vue.Id_Vuelo,
+                                   Origen=ao.Nombre,
+                                   Destino=ad.Nombre,
+                                   Hora_Inicio = vue.Hora_Inicio,
+                                   Hora_Fin = vue.Hora_Fin,
+                                   Fecha = vue.Fecha,
+                                   Nombre=aero.Nombre,
+                                   NombreModelo = mod.NombreModelo,
+                                   NumeroFilas=mod.NumeroFilas,
+                                   NumeroColumnas=mod.NumeroColumnas,                                
+                                   
+                               }).ToList();
+            return selectavion;
+        }
     }
 }

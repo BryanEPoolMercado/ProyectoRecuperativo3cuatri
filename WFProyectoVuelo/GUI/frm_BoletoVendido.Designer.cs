@@ -34,6 +34,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_cerrar_main = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_cerrar_main)).BeginInit();
             this.SuspendLayout();
@@ -56,6 +57,7 @@
             this.btn_ImprimirTicket.TabIndex = 24;
             this.btn_ImprimirTicket.Text = "Imprimir Ticket";
             this.btn_ImprimirTicket.UseVisualStyleBackColor = true;
+            this.btn_ImprimirTicket.Click += new System.EventHandler(this.btn_ImprimirTicket_Click);
             // 
             // panel1
             // 
@@ -92,12 +94,22 @@
             this.panel2.Size = new System.Drawing.Size(800, 39);
             this.panel2.TabIndex = 26;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(33, 61);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(46, 17);
+            this.label2.TabIndex = 27;
+            this.label2.Text = "label2";
+            // 
             // frm_BoletoVendido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btn_ImprimirTicket);
@@ -120,5 +132,6 @@
         private System.Windows.Forms.Panel panel1;
         private Bunifu.Framework.UI.BunifuImageButton btn_cerrar_main;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label2;
     }
 }

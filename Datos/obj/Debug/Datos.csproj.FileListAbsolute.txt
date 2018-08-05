@@ -58,3 +58,15 @@ C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFina
 C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\Datos\obj\Debug\Datos.dll
 C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\Datos\obj\Debug\Datos.pdb
 C:\Users\bboyd\Desktop\Proyecto tercer cuatrimestre\Proyecto modificado\ProyFinal\ProyectoVuelo\Datos\obj\Debug\Datos.csprojAssemblyReference.cache
+C:\Users\bboyd\Desktop\Trabajo Tercer Cuatri\ProyectoRecuperativo3cuatri\Datos\bin\Debug\Datos.dll.config
+C:\Users\bboyd\Desktop\Trabajo Tercer Cuatri\ProyectoRecuperativo3cuatri\Datos\bin\Debug\Datos.dll
+C:\Users\bboyd\Desktop\Trabajo Tercer Cuatri\ProyectoRecuperativo3cuatri\Datos\bin\Debug\Datos.pdb
+C:\Users\bboyd\Desktop\Trabajo Tercer Cuatri\ProyectoRecuperativo3cuatri\Datos\bin\Debug\EntityFramework.dll
+C:\Users\bboyd\Desktop\Trabajo Tercer Cuatri\ProyectoRecuperativo3cuatri\Datos\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\bboyd\Desktop\Trabajo Tercer Cuatri\ProyectoRecuperativo3cuatri\Datos\bin\Debug\EntityFramework.xml
+C:\Users\bboyd\Desktop\Trabajo Tercer Cuatri\ProyectoRecuperativo3cuatri\Datos\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\bboyd\Desktop\Trabajo Tercer Cuatri\ProyectoRecuperativo3cuatri\Datos\obj\Debug\Datos.csprojAssemblyReference.cache
+C:\Users\bboyd\Desktop\Trabajo Tercer Cuatri\ProyectoRecuperativo3cuatri\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\bboyd\Desktop\Trabajo Tercer Cuatri\ProyectoRecuperativo3cuatri\Datos\obj\Debug\Datos.csproj.CopyComplete
+C:\Users\bboyd\Desktop\Trabajo Tercer Cuatri\ProyectoRecuperativo3cuatri\Datos\obj\Debug\Datos.dll
+C:\Users\bboyd\Desktop\Trabajo Tercer Cuatri\ProyectoRecuperativo3cuatri\Datos\obj\Debug\Datos.pdb

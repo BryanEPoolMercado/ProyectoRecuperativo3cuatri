@@ -42,6 +42,10 @@ namespace WFProyectoVuelo.GUI
             DatosInterfaz();
             frmpadre = frm;
             ActualizarTabla();
+          
+            this.dgv_Asientos.Columns[0].Visible = false;
+            this.dgv_Asientos.Columns[5].Visible = false;
+            this.dgv_Asientos.Columns[6].Visible = false;
 
         }
         public void ActualizarTabla()
@@ -51,6 +55,7 @@ namespace WFProyectoVuelo.GUI
         }
         public void DatosInterfaz()
         {
+                      
             lbl_Origen.Text = Convert.ToString(obj.Origen);
             lbl_Destino.Text = Convert.ToString(obj.Destino);
             lbl_Fecha.Text = Convert.ToString(obj.Fecha);

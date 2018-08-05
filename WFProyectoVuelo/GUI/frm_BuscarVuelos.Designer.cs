@@ -31,6 +31,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
+            this.label2 = new System.Windows.Forms.Label();
             this.dgv_Vuelos = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.clave = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.origen = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -52,7 +53,6 @@
             this.cmb_Origen = new System.Windows.Forms.ComboBox();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.bunifuCards1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Vuelos)).BeginInit();
             this.bunifuCards2.SuspendLayout();
@@ -77,6 +77,15 @@
             this.bunifuCards1.ShadowDepth = 20;
             this.bunifuCards1.Size = new System.Drawing.Size(1307, 641);
             this.bunifuCards1.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(811, 30);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(46, 17);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "label2";
             // 
             // dgv_Vuelos
             // 
@@ -267,7 +276,7 @@
             this.btn_BuscarVuelo.IconVisible = true;
             this.btn_BuscarVuelo.IconZoom = 90D;
             this.btn_BuscarVuelo.IsTab = false;
-            this.btn_BuscarVuelo.Location = new System.Drawing.Point(917, 41);
+            this.btn_BuscarVuelo.Location = new System.Drawing.Point(918, 46);
             this.btn_BuscarVuelo.Margin = new System.Windows.Forms.Padding(5);
             this.btn_BuscarVuelo.Name = "btn_BuscarVuelo";
             this.btn_BuscarVuelo.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(115)))), ((int)(((byte)(166)))));
@@ -335,21 +344,12 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(451, 14);
+            this.label1.Location = new System.Drawing.Point(513, 15);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(319, 34);
+            this.label1.Size = new System.Drawing.Size(199, 34);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Haga una reservacion";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(811, 30);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 17);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "label2";
+            this.label1.Text = "Buscar vuelos";
             // 
             // frm_BuscarVuelos
             // 

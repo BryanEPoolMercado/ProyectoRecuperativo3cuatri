@@ -13,16 +13,17 @@
                 Agregar nuevo pais
             </button>
         </div>
-
+         <br />
+         <br />
     </div>
     <div class="row">
         <div class="col-md-8">
             <br />
             <br />
-            <div class="col-md-6">
+            <div class="col-md-8">
                 <asp:TextBox ID="txt_NombrePais" runat="server" CssClass="form-control btn-block" placeholder="Ingrese el nombre del pais" Height="37px" Width="392px"></asp:TextBox>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3">               
                 <asp:Button ID="btn_Buscar" runat="server" Text="Buscar" CssClass="form-control btn btn-block btn-primary" Height="37px" OnClick="btn_Buscar_Click"/>
             </div>
         </div>

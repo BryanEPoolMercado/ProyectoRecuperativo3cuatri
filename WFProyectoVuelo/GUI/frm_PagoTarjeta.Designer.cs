@@ -253,7 +253,7 @@
             // 
             this.lbl_Cantidad.AutoSize = true;
             this.lbl_Cantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Cantidad.Location = new System.Drawing.Point(708, 149);
+            this.lbl_Cantidad.Location = new System.Drawing.Point(719, 149);
             this.lbl_Cantidad.Name = "lbl_Cantidad";
             this.lbl_Cantidad.Size = new System.Drawing.Size(83, 20);
             this.lbl_Cantidad.TabIndex = 32;

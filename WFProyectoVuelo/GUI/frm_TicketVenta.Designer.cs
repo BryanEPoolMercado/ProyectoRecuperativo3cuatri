@@ -28,34 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel_Contenedor = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
+            this.Contenedor_Reporte = new Microsoft.Reporting.WinForms.ReportViewer();
             this.SuspendLayout();
             // 
-            // panel_Contenedor
+            // Contenedor_Reporte
             // 
-            this.panel_Contenedor.ActiveViewIndex = -1;
-            this.panel_Contenedor.Cursor = System.Windows.Forms.Cursors.Default;
-            this.panel_Contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_Contenedor.Location = new System.Drawing.Point(0, 0);
-            this.panel_Contenedor.Name = "panel_Contenedor";
-            this.panel_Contenedor.Size = new System.Drawing.Size(793, 635);
-            this.panel_Contenedor.TabIndex = 0;
-            this.panel_Contenedor.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
+            this.Contenedor_Reporte.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Contenedor_Reporte.Location = new System.Drawing.Point(0, 0);
+            this.Contenedor_Reporte.Name = "Contenedor_Reporte";
+            this.Contenedor_Reporte.ServerReport.BearerToken = null;
+            this.Contenedor_Reporte.Size = new System.Drawing.Size(793, 635);
+            this.Contenedor_Reporte.TabIndex = 0;
             // 
             // frm_TicketVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(793, 635);
-            this.Controls.Add(this.panel_Contenedor);
+            this.Controls.Add(this.Contenedor_Reporte);
             this.Name = "frm_TicketVenta";
             this.Text = "frm_TicketVenta";
+            this.Load += new System.EventHandler(this.frm_TicketVenta_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private CrystalDecisions.Windows.Forms.CrystalReportViewer panel_Contenedor;
+        private Microsoft.Reporting.WinForms.ReportViewer Contenedor_Reporte;
     }
 }
